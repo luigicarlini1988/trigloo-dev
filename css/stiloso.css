@@ -86,7 +86,7 @@ p {
   position:relative;
 }
 .tito {
-  font-size:52px;
+  font-size:50px;
   line-height:55px;
   font-weight:700;
   letter-spacing:-2px;
@@ -1290,7 +1290,7 @@ span.outer-giga.in {
 
 #footer {
   background-color:#202020;
-  padding:100px 0px;
+  padding:100px 0px 40px 0px;
   color:#fff;
   font-weight:200;
   position:relative;
@@ -1312,10 +1312,11 @@ span.outer-giga.in {
 
 .link-skills a {
   color: #fff;
-  font-weight:200;
+  font-weight:300;
   margin:0px 12px 0px 0px;
-  white-space: nowrap;
+  white-space: pre-wrap;
   position:relative;
+  font-size:14px;
 }
 
 .link-skills p strong {
@@ -1387,7 +1388,7 @@ span.outer-giga.in {
   position: relative;
   color: #666;
   right: 0px;
-  margin-left: 10px;
+  margin-left: 4px;
   font-size: 22px;
   font-weight: 200;
   top: 2px;
@@ -1427,8 +1428,12 @@ span.outer-giga.in {
 
 .fm-esplora ul li {
   list-style-type: none;
-  margin-right:20px;
+  margin-right:12px;
   display: inline;
+} 
+
+.fm-esplora ul li:last-child {
+  margin-right:0;
 }
 
 .fm-esplora ul li a {
@@ -2073,7 +2078,9 @@ ul.link-skills {
 
 ul.link-skills li {
   list-style-type: none;
-  margin:10px 0px;
+  margin: 18px 0px;
+  line-height: 16px;
+
 }
 
 ul.link-skills li a {
@@ -2328,13 +2335,14 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
 
 .thumb-piccoli {
   display:flex;
-  justify-content: space-around;
+  flex-wrap:wrap;
 }
 
 .thumb-piccoli a {
   width:22%;
   position:relative;
   color:#202020;
+  margin: 0 1.5%;
 }
 
 .thumb-piccolo .titolicchio {
@@ -2343,8 +2351,8 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
 }
 
 .thumb-piccolo:hover .titolicchio {
-  margin-left:0px;
   color:#f23d57;
+  transform:translateX(-10px);
 }
 
 .thumb-piccolo {
@@ -2374,8 +2382,8 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
 }
 
 .thumb-piccolo .titolicchio {
-  font-size:28px;
-  line-height: 32px;
+  font-size:24px;
+  line-height: 30px;
   margin-left:20px;
   font-weight:700;
 
@@ -2748,4 +2756,22 @@ a.mail:hover:before {
 
 .splide__slide {
   opacity:1;
+}
+
+
+/* 2023 additions */
+
+#cases {
+  margin-top:80px;
+  margin-bottom:80px;
+}
+
+.claimF {
+  margin-top:20px;
+}
+
+.fm-copy {
+  font-size:12px;
+  opacity:.6;
+  margin-top:40px;
 }

@@ -912,6 +912,10 @@
     padding-top:0px;
   }
 
+  #pre-portfolio .flexy {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (max-width : 500px){

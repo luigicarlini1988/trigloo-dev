@@ -279,46 +279,7 @@ $detect = new Mobile_Detect;
         </div>
 
     </div><!-- chiude centratore-->
-    <div class="cent-contenitore">
-        <div class="thumb-piccoli">
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
-        </div>
-    </div>
+    
 </div><!-- chiude pre-portfolio-->
 
 <?php
@@ -425,10 +386,10 @@ wp_reset_query();  ?>
         </div>
 
         <div class="flexy">
-            <div class="half">
+            <div class="fifty">
                 <p>In TRIGLOO® abbiamo maturato esperienza in una vasta gamma di settori e creiamo soluzioni mirate che rispondono alle esigenze specifiche del mercato di riferimento e a seconda di quello che sia l’obbiettivo del Cliente<br /></p>
             </div>
-            <div class="half">
+            <div class="fifty">
                 <p>Lavoriamo a stretto contatto con i Clienti, condividendo idee e feedback in ogni fase per raggiungere obiettivi comuni e il raggiungimento del posizionamento voluto.</p>
             </div>
         </div>
@@ -440,6 +401,56 @@ wp_reset_query();  ?>
         </div>
 
     </div><!-- chiude centratore-->
+
+    <div class="cent-contenitore">
+        <div id="cases" class="thumb-piccoli">
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
 </div><!-- chiude pre-portfolio-->
 
 <?php get_template_part( 'includeLayout/cta-red' ); ?>
