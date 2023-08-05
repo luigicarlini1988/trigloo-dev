@@ -72,7 +72,7 @@ $detect = new Mobile_Detect;
           });
       </script>
     <?php endif; ?>
-    <?php if(is_page(57)): //id aggr pagina servizi ?>
+    <?php if(is_page(57) || is_page(13)|| is_page(857)): //id aggr pagina servizi ?>
       <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script>
@@ -90,7 +90,7 @@ $detect = new Mobile_Detect;
           });
       </script>
     <?php endif; ?>
-    <?php if(is_singular( 'servizio' )||is_singular( 'case-study' ) || is_page(13)|| is_page(857)): //pag aggreg portfolio ?>
+    <?php if(is_singular( 'servizio' )||is_singular( 'case-study' ) ): //pag aggreg portfolio ?>
       <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-servizio-esploso.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script>

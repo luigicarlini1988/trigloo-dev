@@ -63,11 +63,4 @@ jQuery(window).scroll(function(){ // bind window scroll event
 
 });
 
-jQuery(window).scroll(function(){ // resize before lavori correlati
 
-  if(jQuery('#sezione-lavori-corr .divisorio').is_on_screen() ) {
-    window.dispatchEvent(new Event('resize'));
-  }
-
-
-});
