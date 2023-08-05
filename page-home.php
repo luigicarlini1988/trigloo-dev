@@ -15,259 +15,310 @@ Template Name: Pagina Home
 get_header();
 $detect = new Mobile_Detect;
  ?>
- <?php get_template_part( 'includeLayout/postHead' ); ?>
- <?php get_template_part( 'includeLayout/sidebar' ); ?>
+<?php get_template_part( 'includeLayout/postHead' ); ?>
+<?php get_template_part( 'includeLayout/sidebar' ); ?>
 
- <div id="header-home">
-   <div class="cent-contenitore">
-     <div id="logo-resp"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png"/></div>
-     <div class="hl">
-       <div class="hl-int">
-         <p class="titoletto red">We are Trigloo<span class="ori">®</span></p>
-         <p class="titolone">Siamo un'agenzia di comunicazione integrata</p>
-         <p class="testo-intro"><?php
-    if ( have_posts() ) {
-        while ( have_posts() ) {
-            the_post();
-            the_content();
-        } // end while
-    } // end if
-?></p>
-       </div>
-     </div>
+<div id="header-home">
+    <div class="cent-contenitore">
+        <div id="logo-resp"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png" /></div>
+        <div class="hl">
+            <div class="hl-int">
+                <p class="titoletto red">We are Trigloo<span class="ori">®</span></p>
+                <p class="titolone">Siamo un'agenzia di comunicazione integrata</p>
+                <p class="testo-intro">TRIGLOÖ® segue ogni aspetto della comunicazione, dallo studio e progettazione alla creatività, dal marchio alla comunicazione, garantendo che ogni parte lavori insieme per raggiungere gli obiettivi voluti.</p>
+                <?php
+                      if ( have_posts() ) {
+                          while ( have_posts() ) {
+                              the_post();
+                          } // end while
+                      } // end if
+                  ?>
+            </div>
+        </div>
 
-     <div id="trigloo-anima">
-       <div id="occhio1"></div>
-       <div id="occhio2"></div>
-       <div id="tondo"></div>
-       <div id="scroll-d">
-         <p><span class="text">scroll down</span></p>
-       </div>
-     </div>
-   </div>
- </div>
-<?php if( $detect->isMobile() || $detect->isTablet() ): ?>
- <!--SOLO MOBILE sezione skills -->
- <div id="skills-mobile">
-   <div class="cent-contenitore">
-      
-   <div class="skeda-mob">
-
-<div class="divisorio">
-    <div class="iconcina red">
-      <p>01</p>
+        <div id="trigloo-anima">
+            <div id="occhio1"></div>
+            <div id="occhio2"></div>
+            <div id="tondo"></div>
+            <div id="scroll-d">
+                <p><span class="text">scroll down</span></p>
+            </div>
+        </div>
     </div>
-    <div class="lineetta b-red"></div>
 </div>
+<?php if( $detect->isMobile() || $detect->isTablet() ): ?>
+<!--SOLO MOBILE sezione skills -->
+<div id="skills-mobile">
+    <div class="cent-contenitore">
 
-<h2 class="tito">Branding</h2>
-<a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
-  <div class="sm-img">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
-  </div>
-</a>
-<div class="sm-text">
-    <p class="testo"><?php echo get_field('sales_point_setup_home'); ?></p>
-    <?php echo linkServiziHome(1); ?>
-    <div style="clear:both"></div>
-    <div class="small-cta">
-      <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Guarda tutti i lavori</a>
-    </div>
-  </div>
+        <div class="skeda-mob">
 
-</div><!--scheda-mob-->
-
-
-       <div class="skeda-mob">
-
-           <div class="divisorio">
-               <div class="iconcina red">
-                 <p>02</p>
-               </div>
-               <div class="lineetta b-red"></div>
-           </div>
-
-           <h2 class="tito">Web<br/>Solution</h2>
-           <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
-             <div class="sm-img">
-               <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
-             </div>
-           </a>
-           <div class="sm-text">
-               <p class="testo"><?php echo get_field('online_communication_home'); ?></p>
-               <?php echo linkServiziHome(2); ?>
-               <div style="clear:both"></div>
-               <div class="small-cta">
-                 <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Guarda tutti i lavori</a>
-               </div>
-             </div>
-
-         </div><!--scheda-mob-->
-
-         <div class="skeda-mob">
-
-             <div class="divisorio">
-                 <div class="iconcina red">
-                   <p>03</p>
-                 </div>
-                 <div class="lineetta b-red"></div>
-             </div>
-
-             <h2 class="tito">Offline<br/>Comunication</h2>
-             <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
-               <div class="sm-img">
-                 <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
-               </div>
-             </a>
-             <div class="sm-text">
-                 <p class="testo"><?php echo get_field('offline_communication_home'); ?></p>
-                 <?php echo linkServiziHome(0); ?>
-                 <div style="clear:both"></div>
-                 <div class="small-cta">
-                   <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Guarda tutti i lavori</a>
-                 </div>
-               </div>
-
-           </div><!--scheda-mob-->
-
-           </div>
-
- </div> <!--FINE SOLO MOBILE sezione Skills-->
-<?php else: ?>
-  <div id="wrap-skill">
-      <div class="cent-contenitore">
-          <div id="section-skills" class="stickem-container">
-            <div id="outer-skede" class="stickem" >
-              <p id="giga" class="giga grey">What we do</p>
-              <div id="skills-schede">
-                <div id="contatore">
-                  <div id="numeri">
-                    <div id="numeri-ins" class="red">01<br/>02<br/>03</div>
-                  </div>
-                  <div id="lines"></div>
+            <div class="divisorio">
+                <div class="iconcina red">
+                    <p>01</p>
                 </div>
+                <div class="lineetta b-red"></div>
+            </div>
 
+            <h2 class="tito">Branding</h2>
+            <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
+                <div class="sm-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
+                </div>
+            </a>
+            <div class="sm-text">
+                <p class="testo">
+                    <?php echo get_field('sales_point_setup_home'); ?>
+                </p>
+                <?php echo linkServiziHome(1); ?>
+                <div style="clear:both"></div>
+                <div class="small-cta">
+                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Guarda tutti i lavori</a>
+                </div>
+            </div>
+
+        </div>
+        <!--scheda-mob-->
+
+
+        <div class="skeda-mob">
+
+            <div class="divisorio">
+                <div class="iconcina red">
+                    <p>02</p>
+                </div>
+                <div class="lineetta b-red"></div>
+            </div>
+
+            <h2 class="tito">Web<br />Solution</h2>
+            <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
+                <div class="sm-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
+                </div>
+            </a>
+            <div class="sm-text">
+                <p class="testo">
+                    <?php echo get_field('online_communication_home'); ?>
+                </p>
+                <?php echo linkServiziHome(2); ?>
+                <div style="clear:both"></div>
+                <div class="small-cta">
+                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Guarda tutti i lavori</a>
+                </div>
+            </div>
+
+        </div>
+        <!--scheda-mob-->
+
+        <div class="skeda-mob">
+
+            <div class="divisorio">
+                <div class="iconcina red">
+                    <p>03</p>
+                </div>
+                <div class="lineetta b-red"></div>
+            </div>
+
+            <h2 class="tito">Offline<br />Comunication</h2>
+            <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
+                <div class="sm-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
+                </div>
+            </a>
+            <div class="sm-text">
+                <p class="testo">
+                    <?php echo get_field('offline_communication_home'); ?>
+                </p>
+                <?php echo linkServiziHome(0); ?>
+                <div style="clear:both"></div>
+                <div class="small-cta">
+                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Guarda tutti i lavori</a>
+                </div>
+            </div>
+
+        </div>
+        <!--scheda-mob-->
+
+    </div>
+
+</div>
+<!--FINE SOLO MOBILE sezione Skills-->
+<?php else: ?>
+<div id="wrap-skill">
+    <div class="cent-contenitore">
+        <div id="section-skills">
+            <div id="skills-schede">
 
                 <?php $_data = get_fields(); ?>
 
                 <div id="skeda1">
-                  <h2 class="tito">Branding</h2>
-                  <p class="testo"><?php echo $_data['sales_point_setup_home']; ?></p>
-                  <?php echo linkServiziHome(1); ?>
-                  <div style="clear:both"></div>
-                  <div class="small-cta">
-                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Guarda tutti i lavori</a>
-                  </div>
-                </div>
-
-                <div id="skeda2" class="in">
-                  <h2 class="tito">Web<br/>Solution</h2>
-                    <p class="testo"><?php echo $_data['online_communication_home']; ?></p>
-                  <?php echo linkServiziHome(2); ?>
-                  <div style="clear:both"></div>
-                  <div class="small-cta">
-                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Guarda tutti i lavori</a>
-                  </div>
-                </div>
-
-                <div id="skeda3">
-                  <h2 class="tito">Offline<br/>Comunication</h2>
-                  <p class="testo"><?php echo $_data['offline_communication_home']; ?></p>
-                    <?php echo linkServiziHome(0); ?>
+                    <h2 class="tito">Branding</h2>
+                    <div id="sk-d1" style="width:100%; height:1px"></div>
+                    <p class="testo">
+                        <?php echo $_data['sales_point_setup_home']; ?>
+                    </p>
+                    
+                    <?php echo linkServiziHome(1); ?>
                     <div style="clear:both"></div>
                     <div class="small-cta">
-                      <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Guarda tutti i lavori</a>
+                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Guarda tutti i
+                            lavori</a>
                     </div>
                 </div>
 
-              </div>
+                <div id="skeda2" class="in">
+                    <h2 class="tito">Web<br />Solution</h2>
+                    <div id="sk-d2" style="width:100%; height:1px"></div>
+                    <p class="testo">
+                        <?php echo $_data['online_communication_home']; ?>
+                    </p>
+                    
+                    <?php echo linkServiziHome(2); ?>
+                    <div style="clear:both"></div>
+                    <div class="small-cta">
+                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Guarda tutti i
+                            lavori</a>
+                    </div>
+                </div>
 
-              <div id="skills-foto" >
+                <div id="skeda3">
+                    <h2 class="tito">Offline<br />Comunication</h2>
+                    <div id="sk-d3" style="width:100%; height:1px"></div>
+                    <p class="testo">
+                        <?php echo $_data['offline_communication_home']; ?>
+                    </p>
+                    
+                    <?php echo linkServiziHome(0); ?>
+                    <div style="clear:both"></div>
+                    <div class="small-cta">
+                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Guarda tutti i
+                            lavori</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="skills-foto">
+                <div id="contatore">
+                    <div id="numeri">
+                        <div id="numeri-ins" class="red">01<br />02<br />03</div>
+                    </div>
+                </div>
+                <!--<p id="giga" class="giga grey">What we do</p>-->
                 <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
-                  <div id="sk-foto1" class="in">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png"/>
-                  </div>
+                    <div id="sk-foto1" class="in">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png" />
+                    </div>
                 </a>
                 <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
-                  <div id="sk-foto2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png"/>
-                  </div>
+                    <div id="sk-foto2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                    </div>
                 </a>
                 <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
-                  <div id="sk-foto3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png"/>
-                  </div>
+                    <div id="sk-foto3">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                    </div>
                 </a>
-              </div>
             </div>
 
-            <div id="scroller">
-                <div id="sk1"></div>
-                <div id="sk2"></div>
-                <div id="sk3"></div>
-            </div>
-            <div id="ancora-per-center-sx"></div>
+
+        </div>
 
 
-          </div><!-- chiude skills -->
-      </div> <!-- chiude cent-contenitore-->
-  </div> <!--FINE SOLO PC sezione Skills-->
+
+    </div> <!-- chiude contenitore -->
+</div><!-- chiude skills -->
+
+<!--FINE SOLO PC sezione Skills-->
 <?php endif; ?>
 
 
 <div id="banda-rossa">
-  <div class="sfondone"></div>
-  <div class="cent-contenitore">
-      <div class="divisorio">
-          <div class="iconcina">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/tr-o-w.png"/>
-          </div>
-          <div class="lineetta white"></div>
-      </div>
+    <div class="sfondone"></div>
+    <div class="cent-contenitore">
+        <div class="divisorio">
+            <div class="iconcina">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/tr-o-w.png" />
+            </div>
+            <div class="lineetta white"></div>
+        </div>
 
-      <div class="leftore">
-        <p class="testone white">La TRIGLOO® è un partner che gestisce ogni aspetto della comunicazione, dalla pianificazione, esecuzione e fino alla realizzazione, considerando e connettendo tutti i passaggi e unificando la responsabilità. Permettendo ai nostri Clienti di concentrarsi sul loro business principale.</p>
-      </div>
-  </div>
+        <div class="leftore">
+            <p class="testone white">La TRIGLOO® è un partner che gestisce ogni aspetto della comunicazione, dalla pianificazione, esecuzione e fino alla realizzazione, considerando e connettendo tutti i passaggi e unificando la responsabilità. Permettendo ai nostri Clienti di concentrarsi sul loro business principale.</p>
+        </div>
+    </div>
 </div>
 
 <div id="pre-portfolio">
-  <div class="cent-contenitore">
-    <div class="divisorio">
-        <div class="iconcina red">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/cuore.png"/>
+    <div class="cent-contenitore">
+        <div class="divisorio">
+            <div class="iconcina red">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/cuore.png" />
+            </div>
+            <div class="lineetta b-red"></div>
         </div>
-        <div class="lineetta b-red"></div>
-    </div>
 
-    <div class="fifty">
-      <p class="titolo">PERCHÈ HAI BISOGNO DI TRIGLOÖ ®</p>
-    </div>
+        <div class="fifty">
+            <p class="titolo">Perchè affidarsi a Trigloo®</p>
+        </div>
 
-    <div class="flexy">
-      <div class="quarter">
-        <p>Vuoi creare il tuo marchio o i tuoi marchi prodotti e/o registrarli?<br/>
-Vuoi potenziare il tuo brand e fatturare di più?<br/>
-Cerchi una personalizzazione del tuo prodotto o servizio, mercato e tipologia di clienti?<br/>
-Vuoi posizionarti tra i tuoi competitor nel mercato di riferimento?<br/>
-Ti serve una strategia di comunicazione?<br/>
-</p>
-      </div>
-      <div class="quarter">
-        <p>Hai bisogno di comunicare i tuoi prodotti o servizi in maniera professionale?<br/>
-Ti serve un partner unico che ti supporti a 360 gradi in tutte le fasi, dalla realizzazione alla finalizzazione, dalla pianificazione alla reportistica?<br/>
-Cerchi una collaborazione aperta, con feedback e adattamenti?
-</p>
-      </div>
-    </div>
+        <div class="flexy">
+            <div class="fifty">
+                <p>L’attenzione che si deve mettere nei dettagli, e la risoluzione delle problematiche fanno della TRIGLOO ® un punto di partenza per molte operazioni di business.</p>
+            </div>
+            <div class="fifty">
+                <p>I nostri Clienti ci hanno scelto in funzione di quello che facciamo e sul come lo sviluppiamo. </p>
+            </div>
+        </div>
 
-    <div class="fifty">
-      <div class="small-cta">
-        <a class="butun" href="<?php echo site_url(); ?>/portfolio/">esplora i nostri lavori singolarmente.</a>
-      </div>
-    </div>
+        <div class="fifty">
+            <div class="small-cta">
+                <a class="butun" href="<?php echo site_url(); ?>/portfolio/">esplora i nostri lavori singolarmente.</a>
+            </div>
+        </div>
 
-  </div><!-- chiude centratore-->
+    </div><!-- chiude centratore-->
+    <div class="cent-contenitore">
+        <div class="thumb-piccoli">
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="thumb-piccolo">
+                <div class="tp-im-cut">
+                    <img src="img/lavoro.png" />
+                </div>
+                <p class="titolicchio">Taldeitaly Branding</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
 </div><!-- chiude pre-portfolio-->
 
 <?php
@@ -315,8 +366,8 @@ if( $detect->isMobile() || $detect->isTablet() ):
       <div class="phs-testo r">
         <p class="tito">'.get_the_title().'</p>
         <p class="testo">'.get_field('titolo_sotto_descrizione_portofolio').'</p>
-        <p class="testo">'.get_field('sotto_descrizione_portofolio').'</p>
-        <p class="testo">'.get_the_content().'</p>
+        
+        
         <div class="small-cta r">
           <a class="butun" href="'.get_permalink().'">Approfondisci</a>
         </div>
@@ -331,13 +382,13 @@ if( $detect->isMobile() || $detect->isTablet() ):
   else:
       echo '<div class="portfolio-home-section l">
         <div class="phs-imm">
-          <div class="persp">
-            <a href="'.get_permalink().'"><img src="'.get_the_post_thumbnail_url().'" alt="'.get_the_title().'"/></a>
-          </div>
+            <div class="persp">
+                <a href="'.get_permalink().'"><img src="'.get_the_post_thumbnail_url().'" alt="'.get_the_title().'"/></a>
+            </div>
         </div>
         <div class="phs-testo">
           <p class="tito">'.get_the_title().'</p>
-          <p class="testo">'.get_the_content().'</p>
+          <p class="testo">'.get_field('titolo_sotto_descrizione_portofolio').'</p>
           <div class="small-cta">
             <a class="butun" href="'.get_permalink().'">Approfondisci</a>
           </div>
@@ -354,14 +405,45 @@ endif;
 wp_reset_query();  ?>
 
 
- <div id="cta-portfolio">
-   <div class="small-cta">
-     <a class="butun" href="<?php echo site_url(); ?>/portfolio/">Guarda tutti i lavori</a>
-   </div>
- </div>
+<div id="cta-portfolio">
+    <div class="small-cta">
+        <a class="butun" href="<?php echo site_url(); ?>/portfolio/">Guarda tutti i lavori</a>
+    </div>
+</div>
 
-  <?php get_template_part( 'includeLayout/cta-red' ); ?>
+<div id="pre-portfolio">
+    <div class="cent-contenitore">
+        <div class="divisorio">
+            <div class="iconcina red">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/cuore.png" />
+            </div>
+            <div class="lineetta b-red"></div>
+        </div>
+
+        <div class="fifty">
+            <p class="titolo">Conoscienza</p>
+        </div>
+
+        <div class="flexy">
+            <div class="half">
+                <p>In TRIGLOO® abbiamo maturato esperienza in una vasta gamma di settori e creiamo soluzioni mirate che rispondono alle esigenze specifiche del mercato di riferimento e a seconda di quello che sia l’obbiettivo del Cliente<br /></p>
+            </div>
+            <div class="half">
+                <p>Lavoriamo a stretto contatto con i Clienti, condividendo idee e feedback in ogni fase per raggiungere obiettivi comuni e il raggiungimento del posizionamento voluto.</p>
+            </div>
+        </div>
+
+        <div class="fifty">
+            <div class="small-cta">
+                <a class="butun" href="<?php echo site_url(); ?>/portfolio/">esplora i nostri lavori singolarmente.</a>
+            </div>
+        </div>
+
+    </div><!-- chiude centratore-->
+</div><!-- chiude pre-portfolio-->
+
+<?php get_template_part( 'includeLayout/cta-red' ); ?>
 
 
- <?php get_footer();
+<?php get_footer();
 unset($detect); ?>

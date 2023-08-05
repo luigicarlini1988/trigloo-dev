@@ -119,7 +119,7 @@ p {
 }
 
 .testo-intro {
-  font-size: 22px;
+  font-size: 20px;
   line-height:34px;
   transition-duration:1s;
   transition-delay:.5s;
@@ -531,7 +531,7 @@ span.outer-giga.in {
 
 #header-home .hl {
   max-width:50%;
-  padding-top:120px;
+  padding-top:80px;
   position:relative;
   z-index:2;
 }
@@ -681,7 +681,6 @@ span.outer-giga.in {
 }
 
 #wrap-skill {
-  overflow:hidden;
   opacity:0;
   transition-duration:1s;
   transition-delay: 2.8s;
@@ -692,47 +691,32 @@ span.outer-giga.in {
 }
 
 #section-skills {
-  height:400vh;
+  height:auto;
   width:100%;
   /*background-color:#f7f7f7;*/
-  margin-top:50px;
+  margin-top:110px;
   position:relative;
+  display:flex;
 }
 
-#outer-skede {
-    width: 100%;
-    height: 98vh;
-    max-height:1000px;
-    display: flex;
-    align-items: center;
-    position:relative;
-}
 
-#outer-skede.stickit {
-  position:fixed;
-  top:0;
-  width:calc(100% - 250px);
-  max-width:1200px;
-}
 
-#outer-skede.stickit-end{
-  position:absolute;
-  bottom:0;
-  width:100%;
-}
+
 
 #skills-schede {
   width:50%;
   height:65%;
   /*background-color: blue;*/
   position:relative;
+  margin-top:80px;
 }
 
 #skills-foto {
   width:50%;
-  height:88%;
+  height:88svh;
   /*background-color: green;*/
-  position:relative;
+  position:sticky;
+  top:6svh;
   perspective: 800px;
 }
 
@@ -808,7 +792,10 @@ span.outer-giga.in {
   height:32px;
   /*background-color:#fff;*/
   display: flex;
-align-items: center;
+  align-items: center;
+  position:absolute;
+  top:110px;
+  left:calc(-100% - 40px);
 }
 
 #numeri {
@@ -844,37 +831,39 @@ align-items: center;
 
   #skeda1 {
     width: calc(100% - 90px);
-    left: 100px;
-    top: 32px;
+    left: 80px;
+    top: 0px;
     height: calc(100% - 32px);
     /*background-color: #f7f7f7;*/
-    position: absolute;
+    position: relative;
     opacity:0;
     transition-duration:.5s;
     pointer-events: none;
+    margin-bottom:120px;
 
   }
 
   #skeda2 {
     width: calc(100% - 90px);
-    left: 100px;
-    top: 32px;
+    left: 80px;
+    top: 0px;
     height: calc(100% - 32px);
     /*background-color: #f1f1f1;*/
-    position: absolute;
+    position: relative;
     opacity:0;
     transition-duration:.5s;
     pointer-events: none;
+    margin-bottom:120px;
 
   }
 
   #skeda3 {
     width: calc(100% - 90px);
-    left: 100px;
-    top: 32px;
+    left: 80px;
+    top: 0px;
     height: calc(100% - 32px);
     /*background-color: #e5e5e5;*/
-    position: absolute;
+    position: relative;
     opacity:0;
     transition-duration:.5s;
     pointer-events: none;
@@ -883,7 +872,7 @@ align-items: center;
 
   #skeda1.in, #skeda2.in, #skeda3.in {
     opacity:1;
-    left:50px;
+    left:30px;
     display:block;
     pointer-events:all;
 
@@ -1059,6 +1048,12 @@ align-items: center;
     .quarter {
       position:relative;
       width:calc(24% - 25px);
+      margin-left:25px;
+    }
+
+    .half {
+      position:relative;
+      width:calc(49% - 25px);
       margin-left:25px;
     }
 
