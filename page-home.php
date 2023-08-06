@@ -309,7 +309,7 @@ wp_reset_query();  ?>
         </div>
 
         <div class="fifty">
-            <p class="titolo">Conoscienza</p>
+            <p class="titolo">Alcuni Case History Selezionati</p>
         </div>
 
         <div class="flexy">
@@ -323,7 +323,7 @@ wp_reset_query();  ?>
 
         <div class="fifty">
             <div class="small-cta">
-                <a class="butun" href="<?php echo site_url(); ?>/portfolio/">esplora i nostri lavori singolarmente.</a>
+                <a class="butun" href="<?php echo site_url(); ?>/case-study/">Esplora tutti i case studies</a>
             </div>
         </div>
 

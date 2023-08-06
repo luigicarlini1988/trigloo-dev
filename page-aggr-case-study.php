@@ -27,7 +27,7 @@ Template Name: Pagina Aggr Case Study
 				<div class="flexy">
 					<div class="hl">
 						<div class="hl-int">
-							<h1 class="titoletto red">Case Study</h1>
+							<h1 class="titoletto red">Case Studies</h1>
 							<p class="titolone">Alcuni dei nostri casi di successo</p>
 						</div>
 					</div>

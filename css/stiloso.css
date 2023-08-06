@@ -2228,7 +2228,7 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
     width: calc(100% - 60px);
     z-index: 100;
     position: relative;
-    top: -40px;
+    top: 0px;
 }
 
 #sezione-lavori-corr .ps-thumb-text .tito {
@@ -2636,10 +2636,13 @@ a.mail:hover:before {
 }
 
 #mappa {
-  width:100%;
-  height:auto;
-  position:relative;
-  padding:120px 0px;
+  width: calc(100% - 35px);
+    height: 100%;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    margin-top: 50px;
+    margin-left: 35px;
+
 }
 
 .mappa-ins {
@@ -2815,4 +2818,46 @@ a.mail:hover:before {
   font-size:12px;
   opacity:.6;
   margin-top:40px;
+}
+
+#frm_form_1_container.frm_forms label {
+  display:none;
+}
+
+#frm_form_1_container.frm_forms input,
+#frm_form_1_container.frm_forms textarea {
+  border:none;
+  border-radius:0;
+  padding:24px 12px;
+  background:rgba(255,255,255,0.9);
+  color:#202020;
+  font-family: 'Montserrat';
+}
+
+#frm_form_1_container.frm_forms input:active,
+#frm_form_1_container.frm_forms input:focus {
+  color:#f23d57;
+  box-shadow: none;
+  background:rgba(255,255,255,1);
+}
+
+#frm_form_1_container.frm_forms textarea:active,
+#frm_form_1_container.frm_forms textarea:focus {
+  box-shadow: none;
+  background:rgba(255,255,255,1);
+}
+
+#frm_form_1_container.frm_forms .frm_submit{
+  display:flex;
+  align-items: flex-end;
+}
+
+#frm_form_1_container.frm_forms .frm_submit button {
+  border: none;
+    border-radius: 0;
+    padding: 12px 34px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat';
 }
