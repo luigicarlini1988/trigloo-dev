@@ -46,104 +46,6 @@ $detect = new Mobile_Detect;
         </div>
     </div>
 </div>
-<?php if( $detect->isMobile() || $detect->isTablet() ): ?>
-<!--SOLO MOBILE sezione skills -->
-<div id="skills-mobile">
-    <div class="cent-contenitore">
-
-        <div class="skeda-mob">
-
-            <div class="divisorio">
-                <div class="iconcina red">
-                    <p>01</p>
-                </div>
-                <div class="lineetta b-red"></div>
-            </div>
-
-            <h2 class="tito">Branding</h2>
-            <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
-                <div class="sm-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
-                </div>
-            </a>
-            <div class="sm-text">
-                <p class="testo">
-                    <?php echo get_field('sales_point_setup_home'); ?>
-                </p>
-                <?php echo linkServiziHome(1); ?>
-                <div style="clear:both"></div>
-                <div class="small-cta">
-                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Guarda tutti i lavori</a>
-                </div>
-            </div>
-
-        </div>
-        <!--scheda-mob-->
-
-
-        <div class="skeda-mob">
-
-            <div class="divisorio">
-                <div class="iconcina red">
-                    <p>02</p>
-                </div>
-                <div class="lineetta b-red"></div>
-            </div>
-
-            <h2 class="tito">Web<br />Solution</h2>
-            <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
-                <div class="sm-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
-                </div>
-            </a>
-            <div class="sm-text">
-                <p class="testo">
-                    <?php echo get_field('online_communication_home'); ?>
-                </p>
-                <?php echo linkServiziHome(2); ?>
-                <div style="clear:both"></div>
-                <div class="small-cta">
-                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Guarda tutti i lavori</a>
-                </div>
-            </div>
-
-        </div>
-        <!--scheda-mob-->
-
-        <div class="skeda-mob">
-
-            <div class="divisorio">
-                <div class="iconcina red">
-                    <p>03</p>
-                </div>
-                <div class="lineetta b-red"></div>
-            </div>
-
-            <h2 class="tito">Offline<br />Comunication</h2>
-            <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
-                <div class="sm-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
-                </div>
-            </a>
-            <div class="sm-text">
-                <p class="testo">
-                    <?php echo get_field('offline_communication_home'); ?>
-                </p>
-                <?php echo linkServiziHome(0); ?>
-                <div style="clear:both"></div>
-                <div class="small-cta">
-                    <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Guarda tutti i lavori</a>
-                </div>
-            </div>
-
-        </div>
-        <!--scheda-mob-->
-
-    </div>
-
-</div>
-<!--FINE SOLO MOBILE sezione Skills-->
-<?php else: ?>
 <div id="wrap-skill">
     <div class="cent-contenitore">
         <div id="section-skills">
@@ -152,8 +54,17 @@ $detect = new Mobile_Detect;
                 <?php $_data = get_fields(); ?>
 
                 <div id="skeda1">
+                    <div class="divisorio onlyresp">
+                        <div class="iconcina red">
+                            <p>01</p>
+                        </div>
+                        <div class="lineetta b-red"></div>
+                    </div>
                     <h2 class="tito">Branding</h2>
                     <div id="sk-d1" style="width:100%; height:1px"></div>
+                    <div class="onlyresp wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
+                    </div>
                     <p class="testo">
                         <?php echo $_data['sales_point_setup_home']; ?>
                     </p>
@@ -167,8 +78,17 @@ $detect = new Mobile_Detect;
                 </div>
 
                 <div id="skeda2" class="in">
+                <div class="divisorio onlyresp">
+                        <div class="iconcina red">
+                            <p>02</p>
+                        </div>
+                        <div class="lineetta b-red"></div>
+                    </div>
                     <h2 class="tito">Web<br />Solution</h2>
                     <div id="sk-d2" style="width:100%; height:1px"></div>
+                    <div class="onlyresp wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
+                    </div>
                     <p class="testo">
                         <?php echo $_data['online_communication_home']; ?>
                     </p>
@@ -182,8 +102,17 @@ $detect = new Mobile_Detect;
                 </div>
 
                 <div id="skeda3">
+                <div class="divisorio onlyresp">
+                        <div class="iconcina red">
+                            <p>03</p>
+                        </div>
+                        <div class="lineetta b-red"></div>
+                    </div>
                     <h2 class="tito">Offline<br />Comunication</h2>
                     <div id="sk-d3" style="width:100%; height:1px"></div>
+                    <div class="onlyresp wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
+                    </div>
                     <p class="testo">
                         <?php echo $_data['offline_communication_home']; ?>
                     </p>
@@ -230,8 +159,6 @@ $detect = new Mobile_Detect;
     </div> <!-- chiude contenitore -->
 </div><!-- chiude skills -->
 
-<!--FINE SOLO PC sezione Skills-->
-<?php endif; ?>
 
 
 <div id="banda-rossa">

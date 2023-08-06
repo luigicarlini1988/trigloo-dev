@@ -36,7 +36,7 @@ $detect = new Mobile_Detect;
          $(".titolone , .titolo ").animatext({
             mode:"words"
           });
-          $(".skeda-mob .tito ").animatext({
+          $(".skeda-mob .tito, .tito ").animatext({
              speed: 50
            });
           $(".testo-intro").animatext({
@@ -90,7 +90,7 @@ $detect = new Mobile_Detect;
           });
       </script>
     <?php endif; ?>
-    <?php if(is_singular( 'servizio' )||is_singular( 'case-study' ) ): //pag aggreg portfolio ?>
+    <?php if(is_singular( 'servizio' ) || is_singular( 'case-study' ) ): //pag aggreg portfolio ?>
       <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-servizio-esploso.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script>
@@ -108,6 +108,13 @@ $detect = new Mobile_Detect;
           });
       </script>
     <?php endif; ?>
+
+    <!-- page case study -->
+    <?php if( is_page_template('page-aggr-case-study.php')  ) :?>
+      <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
+      <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
+    <?php endif;?>
+
     <?php if(is_singular( 'portfolio' )): ?>
       <script src="<?php echo get_template_directory_uri(); ?>/js/splide.min.js"></script>
       <script>

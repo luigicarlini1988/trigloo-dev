@@ -81,7 +81,9 @@ p {
 .titolone span.paragraph1 span,
 .testone span.paragraph1 span,
 .testo-intro span.paragraph1 span,
-.titolino span.paragraph1 span {
+.titolino span.paragraph1 span,
+.tito  span.paragraph1 span,
+.tito  span.paragraph2 span {
   transition-duration: .6s;
   position:relative;
 }
