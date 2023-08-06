@@ -1070,7 +1070,7 @@ span.outer-giga.in {
     }
 
     .phs-testo {
-      width:38%;
+      width:42%;
       left:6%;
       z-index:2;
       position:relative;
@@ -2186,16 +2186,16 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
 }
 
 .ps-thumb-text {
-  margin-left:60px;
-  width:calc(100% - 140px);
-  z-index:100;
-  position:relative;
-  top:-60px;
+  margin-left: 40px;
+    width: calc(100% - 60px);
+    z-index: 100;
+    position: relative;
+    top: -40px;
 }
 
 #sezione-lavori-corr .ps-thumb-text .tito {
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 50px;
+    line-height: 60px;
 }
 
 .ps-thumb-text .tito {

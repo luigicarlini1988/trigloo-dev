@@ -346,6 +346,13 @@
     transition-duration:.8s;
   }
 
+  #sezione-lavori-corr .ps-thumb-img,
+  #sezione-lavori-corr .ps-thumb-img img {
+    transition-duration:.3s;
+  }
+
+  
+
   .ps-thumb-img.in {
     width:100%;
   }
@@ -1603,6 +1610,10 @@
   .onlyresp.wrap img {
     position:absolute;
     height:100%;
+  }
+
+  #header-servizi .hl {
+    max-width: 100%;
   }
 }
 
