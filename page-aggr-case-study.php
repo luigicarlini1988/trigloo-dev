@@ -69,7 +69,7 @@ Template Name: Pagina Aggr Case Study
 								//$image = get_field('immagine_mobile_porfolio',$_lID);
 							echo '<div class="ps-thumb">
 							 <a href="'.get_permalink().'" title="'.get_the_title().'">
-								 <div class="ps-thumb-img done">
+								 <div class="ps-thumb-img aja">
 									 <div class="persp">
 										 <img src="'.get_the_post_thumbnail_url().'" alt="'.get_the_title().'" />
 									 </div>

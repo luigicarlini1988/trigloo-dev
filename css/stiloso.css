@@ -2078,6 +2078,10 @@ ul.link-skills {
   margin-top:40px;
 }
 
+ul.link-skills.serv-correlati {
+  margin-top:10px;
+}
+
 ul.link-skills li {
   list-style-type: none;
   margin: 18px 0px;
