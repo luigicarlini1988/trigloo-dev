@@ -2089,9 +2089,13 @@ ul.link-skills {
   margin-left:0px;
 }
 
-ul.link-skills.serv-correlati {
+.filters-column ul.link-skills.serv-correlati {
   margin-top:10px;
   margin-left:0px;
+}
+ ul.link-skills.serv-correlati {
+  margin-top:10px;
+  margin-left:35px;
 }
 
 ul.link-skills li {

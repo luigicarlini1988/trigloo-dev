@@ -480,6 +480,23 @@
   margin-left: 8%;
   }
 
+  #section-cliente {
+    top:0;
+  }
+
+  .ss-banda .quarter {
+    width:30%;
+    opacity:1;
+    left:0;
+    margin-left:0;
+  }
+
+  .centerello {
+    width:calc(70% - 50px);
+    margin-left:50px;
+    padding-top:80px;
+  }
+
 }
 
 
@@ -780,14 +797,14 @@
 }
 
 #section-cliente .ss-banda.flexy .quarter {
-  width:calc(50% - 35px);
+  width:calc(30% - 35px);
   margin-right:35px;
   margin-left:0;
   padding-bottom:0px;
 }
 
 .centerello {
-    width: 50%;
+    width: 70%;
     margin-left: 0;
     padding-top: 0;
 }
