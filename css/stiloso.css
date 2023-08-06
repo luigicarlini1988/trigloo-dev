@@ -2861,3 +2861,7 @@ a.mail:hover:before {
     font-weight: 600;
     font-family: 'Montserrat';
 }
+
+.grecaptcha-badge {
+  display:none;
+}
