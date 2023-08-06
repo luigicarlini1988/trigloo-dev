@@ -560,8 +560,12 @@
   }
 
   .ps-thumb-text {
-    margin-left: 30px;
-    width: calc(100% - 60px);
+    margin-left: 0px;
+    width: calc(100% - 30px);
+  }
+
+  .ps-thumb-text p.tito {
+    margin-top:0;
   }
 
   .portfolio-short-banda {
@@ -1604,6 +1608,7 @@
 
   #header-servizi.portfolio-int .hr {
     max-width: 100%;
+    padding-top:0;
   }
 
 
