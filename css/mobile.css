@@ -2,6 +2,17 @@
   display:none;
 }
 
+@media screen and (max-width: 1300px){
+  #header-servizi .hr {
+    flex-wrap:wrap;
+    margin-left:70px;
+  }
+
+  #header-servizi .hr .filters-column {
+    width:100%;
+    max-width:100%;
+  }
+}
 
 
 @media screen and (max-width: 1024px){
@@ -917,9 +928,13 @@
 }
 
 #header-servizi.portfolio-int .hr  {
-  max-width: 60%;
+  max-width: 100%;
   margin-left: 0%;
   padding-top:20px;
+  }
+
+  #header-servizi .hr .filters-column {
+    width:max-content;
   }
   #sezione-lavori-corr.portfolio-int {
     padding-top:0px;
@@ -987,7 +1002,7 @@
 
 }
 
-@media screen and (max-width : 500px){
+@media screen and (max-width : 600px){
 
   #line1, #line3 {
     display:none;
@@ -1614,6 +1629,22 @@
 
   #header-servizi .hl {
     max-width: 100%;
+  }
+
+  .filters-column ul.link-skills li {
+    margin:4px 0px 0px 0px;
+  }
+
+  .filters-column {
+    min-width:100%;
+  }
+
+  .filters-column ul.link-skills li a {
+    font-size:12px;
+    font-weight:400;
+  }
+  .filters-column ul.link-skills.serv-correlati {
+    margin-bottom:10px;
   }
 }
 
