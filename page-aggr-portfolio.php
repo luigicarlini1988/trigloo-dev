@@ -60,7 +60,7 @@ Template Name: Pagina Aggr Portfolio
 							</div>
 							<div>
 								<ul class="serv-correlati link-skills">';
-							//mostro tutti i servizi correlati a quella macrosezione
+							//mostro tutti i servisi correlati a quella macrosezione
 							$args = array(
 							 'posts_per_page'	=> -1,
 							 'post_type' => 'servizio',
