@@ -501,6 +501,18 @@
     padding-top:80px;
   }
 
+  .page-template-page-aggr-servizi #header-servizi .hr,
+  .page-template-page-aggr-servizi #header-servizi .hl {
+    width:100%;
+    max-width:100%;
+    margin-left:0;
+    margin-top:0;
+  }
+
+  .page-template-page-aggr-servizi #header-servizi  .flexy {
+    flex-wrap: wrap;
+  }
+
 }
 
 
@@ -1025,6 +1037,18 @@
     display:flex;
   }
 
+  .page-template-page-aggr-servizi .full-width .flexy {
+    flex-wrap: wrap;
+  }
+
+  .page-template-page-aggr-servizi .full-width .flexy .fifty {
+    width:100%;
+  }
+
+  .page-template-page-aggr-servizi .ss1 {
+    width:100%;
+  }
+
 }
 
 @media screen and (max-width : 600px){
@@ -1360,7 +1384,7 @@
   }
 
   #cont-fotoservizi {
-    height:180px;
+    height:280px;
   }
 
   #cont-fotoservizi.in {
@@ -1671,6 +1695,15 @@
   }
   .filters-column ul.link-skills.serv-correlati {
     margin-bottom:10px;
+  }
+
+  .page-template-page-aggr-servizi .full-width .flexy .fifty,
+  .page-template-page-aggr-servizi .full-width .flexy .fifty p {
+    margin-left:0;
+  }
+
+  .page-template-page-aggr-servizi .full-width {
+    margin-bottom:60px;
   }
 }
 

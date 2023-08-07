@@ -134,21 +134,27 @@ $detect = new Mobile_Detect;
                     </div>
                 </div>
                 <!--<p id="giga" class="giga grey">What we do</p>-->
-                <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
+                
                     <div id="sk-foto1" class="in">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png" />
+                        <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png" />
+                        </a>
                     </div>
-                </a>
-                <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
+                
+                
                     <div id="sk-foto2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                        <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                        </a>
                     </div>
-                </a>
-                <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
+                
+                
                     <div id="sk-foto3">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                        <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                        </a>
                     </div>
-                </a>
+               
             </div>
 
 
@@ -331,51 +337,25 @@ wp_reset_query();  ?>
 
     <div class="cent-contenitore">
         <div id="cases" class="thumb-piccoli">
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
+            <?php $case_home = get_field('case_studies_home');
+            if( $case_home ): ?>
 
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
+            <?php foreach( $case_home as $post ): 
+                setup_postdata($post); ?>
 
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="thumb-piccolo">
-                <div class="tp-im-cut">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
-                </div>
-                <p class="titolicchio">Taldeitaly Branding</p>
-                </div>
-            </a>
-
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="thumb-piccolo">
+                        <div class="tp-im-cut">
+                            <?php $medium_large = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium_large');?>
+                            <img class="news-thumb" src="<?php echo esc_url($medium_large['0']); ?>" loading="lazy" />
+                        </div>
+                        <p class="titolicchio"><?php the_title(); ?></p>
+                        </div>
+                    </a>
+              
+            <?php endforeach; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php endif; ?>       
         </div>
     </div>
 </div><!-- chiude pre-portfolio-->

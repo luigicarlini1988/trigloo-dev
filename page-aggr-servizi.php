@@ -27,20 +27,20 @@ Template Name: Pagina Aggr Servizi
 				<div class="flexy">
 					<div class="hl">
 						<div class="hl-int">
-							<p class="titoletto red">L’offerta di TRIGLOO ® (what we do)</p>
+							<p class="titoletto red">L’offerta di TRIGLOO® </p>
 							<p class="titolone">Una pluralità di servizi integrati fra loro</p>
 						</div>
 					</div>
 	
 					<div class="hr">
-						<p class="testo-intro"><?php 
-    if ( have_posts() ) {
-        while ( have_posts() ) {
-            the_post();
-            the_content(); 
-        } // end while
-    } // end if
-?></p>
+						<div class="testo-intro"><?php 
+							if ( have_posts() ) {
+								while ( have_posts() ) {
+									the_post();
+									the_content(); 
+								} // end while
+							} // end if
+						?></div>
 					</div>
 				</div>
 		</div>
@@ -54,6 +54,20 @@ Template Name: Pagina Aggr Servizi
 	
 	<div id="section-servizi" class="b-red">
 		<div class="cent-contenitore">
+			    <div class="full-width">
+					<div class="divisorio">
+							<div class="iconcina">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/plu-s.png"/>
+							</div>
+							<div class="lineetta white"></div>
+					</div>
+	
+					<h2 class="titolos white"><?php the_field('primo_titolo') ?></h2>
+					<div class="flexy">
+						<div class="fifty white"><p><?php the_field('primo_testo_sinistra') ?></p></div>
+						<div class="fifty white"><p><?php the_field('primo_testo_destra') ?></p></div>
+					</div>
+				</div>
 				<div class="ss-banda flexy"><!--striscia servizio-->
 					<p class="giga light">What we do</p>
 					<div class="ss1">

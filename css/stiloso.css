@@ -744,13 +744,7 @@ span.outer-giga.in {
 
 }
 
-#sk-foto1:hover, #sk-foto2:hover, #sk-foto3:hover  {
-  transform: rotateY(-10Deg) scale(.85) translateX(-15px);
-}
 
-#sk-foto1:hover img, #sk-foto2:hover img, #sk-foto3:hover img  {
-  transform: rotateY(8Deg) scale(1.26) translateX(15px);
-}
 
 
 
@@ -2864,4 +2858,30 @@ a.mail:hover:before {
 
 .grecaptcha-badge {
   display:none;
+}
+
+.page-template-page-aggr-servizi #header-servizi .hr {
+  display:block;
+}
+
+.page-template-page-aggr-servizi .full-width .fifty p {
+  margin-left: 10px;
+}
+
+.page-template-page-aggr-servizi .full-width {
+  margin-bottom:100px;
+}
+
+#skills-foto:hover #sk-foto1, 
+#skills-foto:hover #sk-foto2, 
+#skills-foto:hover #sk-foto3 {
+  transform: rotateY(-10Deg) scale(.85) translateX(-15px) ;
+
+}
+
+#sk-foto1:hover img, 
+#sk-foto2:hover img, 
+#sk-foto3:hover img  {
+  transform: rotateY(8Deg) scale(1.26) translateX(15px) ;
+
 }
