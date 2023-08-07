@@ -1554,7 +1554,7 @@ span.outer-giga.in {
 }
 
 #menu-reale .fifty {
-  width:calc(50% - 120px);
+  width:calc(50% - 80px);
   margin-left:100px;
   opacity:0;
   transition-delay: .6s;
@@ -1571,7 +1571,7 @@ span.outer-giga.in {
 
 #menu-reale.events .fifty {
   opacity:1;
-  margin-left:120px;
+  margin-left:80px;
 }
 
 #menu-reale.events .fifty.sec {
