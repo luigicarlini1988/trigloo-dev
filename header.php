@@ -33,10 +33,10 @@ $detect = new Mobile_Detect;
       <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-home.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
       <script>
       $(document).ready(function(){
-         $(".titolone , .titolo ").animatext({
+         $(".titolone , .titolo, .tito ").animatext({
             mode:"words"
           });
-          $(".skeda-mob .tito, .tito ").animatext({
+          $(".skeda-mob .tito").animatext({
              speed: 50
            });
           $(".testo-intro").animatext({

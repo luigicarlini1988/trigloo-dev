@@ -19,6 +19,7 @@
 }
 
 
+
 @media screen and (max-width: 1024px){
 
 
@@ -330,6 +331,30 @@
 
   .portfolio-short-banda {
     padding:0px;
+    
+  }
+
+  #small-portfolio-mobile .portfolio-short-banda {
+    flex-wrap:wrap;
+  }
+
+  #small-portfolio-mobile .portfolio-short-banda .ps-thumb-text {
+    margin-left:10px;
+    margin-top:10px;
+    width:100%;
+  }
+
+  #small-portfolio-mobile .portfolio-short-banda .ps-thumb-text .tito {
+    font-size:38px;
+    line-height:48px;
+  }
+
+  .thumb-piccolo .titolicchio {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 700;
   }
 
   .portfolio-short-banda:first-child {
@@ -511,6 +536,70 @@
 
   .page-template-page-aggr-servizi #header-servizi  .flexy {
     flex-wrap: wrap;
+  }
+
+  #skills-foto {
+    display:none;
+  }
+
+  #skills-schede {
+    width:100%;
+    padding-bottom:80px;
+  }
+
+  .onlyresp.wrap {
+    width: 0%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0px auto 60px 0px;
+    display: flex;
+    justify-content: center;
+    transition-delay: .3s;
+    transition-duration: 1s;
+
+  }
+
+  #skeda1.in .onlyresp.wrap,
+  #skeda2.in .onlyresp.wrap ,
+  #skeda3.in .onlyresp.wrap  {
+    width: 100%;
+
+  }
+
+  .onlyresp.wrap img {
+  
+    height:100%;
+  }
+
+  #skeda1, #skeda2, #skeda3 {
+    left:0;
+    width:100%;
+    opacity:1;
+  }
+
+  #skeda1.in, #skeda2.in, #skeda3.in {
+    left:0;
+  }
+
+  #wrap-skill {
+    opacity:1;
+  }
+
+  #section-skills {
+    margin-top:0;
+  }
+  
+
+  .onlyresp.divisorio {
+    display:flex;
+  }
+
+  .hl-int {
+    padding-left:0;
+  }
+
+  .hl-int .titoletto {
+    margin-left:0;
   }
 
 }
@@ -981,61 +1070,6 @@
     flex-wrap: wrap;
   }
 
-  #skills-foto {
-    display:none;
-  }
-
-  #skills-schede {
-    width:100%;
-    padding-bottom:80px;
-  }
-
-  .onlyresp.wrap {
-    width: 0%;
-    height: 400px;
-    overflow: hidden;
-    margin: 0px auto 60px 0px;
-    display: flex;
-    justify-content: center;
-    transition-delay: .3s;
-    transition-duration: 1s;
-
-  }
-
-  #skeda1.in .onlyresp.wrap,
-  #skeda2.in .onlyresp.wrap ,
-  #skeda3.in .onlyresp.wrap  {
-    width: 100%;
-
-  }
-
-  .onlyresp.wrap img {
-  
-    height:100%;
-  }
-
-  #skeda1, #skeda2, #skeda3 {
-    left:0;
-    width:100%;
-    opacity:1;
-  }
-
-  #skeda1.in, #skeda2.in, #skeda3.in {
-    left:0;
-  }
-
-  #wrap-skill {
-    opacity:1;
-  }
-
-  #section-skills {
-    margin-top:0;
-  }
-  
-
-  .onlyresp.divisorio {
-    display:flex;
-  }
 
   .page-template-page-aggr-servizi .full-width .flexy {
     flex-wrap: wrap;

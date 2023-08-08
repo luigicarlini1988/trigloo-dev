@@ -60,7 +60,7 @@ Possiamo offrirti un caffè? 🙂
 						<li><a href="<?php echo site_url(); ?>">Home</a></li>
 						<li><a href="<?php echo get_permalink(209); ?>">About</a></li>
 	          <li><a href="<?php echo get_permalink(57); ?>">Skills</a></li>
-			  <li><a href="<?php echo get_permalink(583); ?>">Case Study</a></li>
+			  <li><a href="<?php echo get_permalink(583); ?>">Case Studies</a></li>
 	          <li><a href="<?php echo get_permalink(13); ?>">Portfolio</a></li>
 	          
 	          <li><a href="<?php echo get_permalink(211); ?>">Contatti</a></li>

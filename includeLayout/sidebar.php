@@ -9,7 +9,7 @@
           <li id="uno"><a href="<?php echo site_url(); ?>">Home</a></li>
           <li id="due"><a href="<?php echo get_permalink(209); ?>">About</a></li>
           <li id="tre"><a href="<?php echo get_permalink(57); ?>">Skills</a></li>
-          <li id="quattro"><a href="<?php echo get_permalink(583); ?>">Case Study</a></li>
+          <li id="quattro"><a href="<?php echo get_permalink(583); ?>">Case Studies</a></li>
           <li id="cinque"><a href="<?php echo get_permalink(13); ?>">Portfolio</a></li>
           <li id="sei"><a href="<?php echo get_permalink(211); ?>">Contatti</a></li>
         </ul>
