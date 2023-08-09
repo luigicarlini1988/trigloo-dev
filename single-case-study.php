@@ -97,6 +97,81 @@
 
 	</div>
 
+
+
+
+	<?php 
+            $args = array(
+             'posts_per_page'	=> 3,
+             'post_type' => 'case-study',
+              'order' => 'ASC',
+             'orderby' => 'title',
+             'post_status' => 'publish',
+			 'post__not_in' => array(get_the_id()),
+              );
+              $the_query = new WP_Query( $args );
+
+            
+			  if( $the_query->have_posts() ): ?>
+				
+				<div id="pre-portfolio">
+    <div class="cent-contenitore">
+        <div class="divisorio">
+            <div class="iconcina red">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/cuore.png" />
+            </div>
+            <div class="lineetta b-red"></div>
+        </div>
+
+        <div class="fifty">
+            <p class="titolo">Ulteriori Case History di successo</p>
+        </div>
+
+        <div class="flexy">
+            <div class="fifty">
+                <p>In TRIGLOO® abbiamo maturato esperienza in una vasta gamma di settori e creiamo soluzioni mirate che rispondono alle esigenze specifiche del mercato di riferimento e a seconda di quello che sia l’obbiettivo del Cliente<br /></p>
+            </div>
+            <div class="fifty">
+                <p>Lavoriamo a stretto contatto con i Clienti, condividendo idee e feedback in ogni fase per raggiungere obiettivi comuni e il raggiungimento del posizionamento voluto.</p>
+            </div>
+        </div>
+
+        <div class="fifty">
+            <div class="small-cta">
+                <a class="butun" href="<?php echo site_url(); ?>/case-study/">Esplora tutti i case studies</a>
+            </div>
+        </div>
+
+    </div><!-- chiude centratore-->
+
+    <div class="cent-contenitore">
+        <div id="cases" class="thumb-piccoli">
+            
+
+            <?php while( $the_query->have_posts() ) : $the_query->the_post();
+                setup_postdata($post); ?>
+
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="thumb-piccolo">
+                        <div class="tp-im-cut">
+                            <?php $medium_large = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium_large');?>
+                            <img class="news-thumb" src="<?php echo esc_url($medium_large['0']); ?>" loading="lazy" />
+                        </div>
+                        <p class="titolicchio"><?php the_title(); ?></p>
+                        </div>
+                    </a>
+              
+            <?php endwhile; ?>
+            
+                  
+            <?php wp_reset_query();
+			wp_reset_postdata(); ?>
+        </div>
+    </div>
+	</div>
+    <?php endif; ?> 
+	
+
 				 <?php unset ($Cliente);
 
 		 endwhile; // end of the loop. ?>

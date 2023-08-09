@@ -305,6 +305,9 @@ wp_reset_query();  ?>
     </div>
 </div>
 
+
+<?php $case_home = get_field('case_studies_home');
+            if( $case_home ): ?>
 <div id="pre-portfolio">
     <div class="cent-contenitore">
         <div class="divisorio">
@@ -337,8 +340,7 @@ wp_reset_query();  ?>
 
     <div class="cent-contenitore">
         <div id="cases" class="thumb-piccoli">
-            <?php $case_home = get_field('case_studies_home');
-            if( $case_home ): ?>
+            
 
             <?php foreach( $case_home as $post ): 
                 setup_postdata($post); ?>
@@ -354,12 +356,14 @@ wp_reset_query();  ?>
                     </a>
               
             <?php endforeach; ?>
+            
+                  
             <?php wp_reset_postdata(); ?>
-            <?php endif; ?>       
         </div>
     </div>
-</div><!-- chiude pre-portfolio-->
 
+</div><!-- chiude pre-portfolio-->
+<?php endif; ?> 
 <?php get_template_part( 'includeLayout/cta-red' ); ?>
 
 
