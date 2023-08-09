@@ -469,7 +469,8 @@
 
 #header-servizio-contatti,
 #text-plus-form,
-#testo-mappa {
+#testo-mappa,
+.faq {
   background: linear-gradient(to left, #fff, #fff 50px, #f23d57 50px, #f23d57)
 }
 
@@ -1662,7 +1663,8 @@
 
 #header-servizio-contatti,
 #text-plus-form,
-#testo-mappa {
+#testo-mappa,
+.faq {
   background: linear-gradient(to left, #fff, #fff 30px, #f23d57 30px, #f23d57)
 }
 
@@ -1781,6 +1783,16 @@
 
   .page-template-page-aggr-servizi .full-width {
     margin-bottom:60px;
+  }
+
+  .faq {
+    padding-top: 60px;
+  }
+
+  .faq .fifty,
+  .faq .seventy {
+    width:100%;
+    margin-left:0;
   }
 }
 

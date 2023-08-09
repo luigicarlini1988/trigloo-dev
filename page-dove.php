@@ -18,6 +18,10 @@ $detect = new Mobile_Detect;
  <?php get_template_part( 'includeLayout/postHead' ); ?>
  <?php get_template_part( 'includeLayout/sidebar' ); ?>
  
+ <?php while ( have_posts() ) :
+	the_post();
+	?>
+
  <div id="header-servizio-contatti">
      <div class="cent-contenitore">
          <div id="logo-resp"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png"/></div>
@@ -336,7 +340,118 @@ $detect = new Mobile_Detect;
 
      </div>
    </div>
+
+   <div class="faq">
+    <div class="cent-contenitore">
+        <div class="fifty">
+             <div class="divisorio">
+                 <div class="iconcina red">
+                   <img src="<?php echo get_template_directory_uri(); ?>/img/loco.png">
+                 </div>
+                 <div class="lineetta white"></div>
+             </div>
+             <p class="titolo white">Domande e Risposte</p>   
+         </div>
+         <div class="seventy">
+         
+            <?php if( get_field('domanda_1') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_1')?></p>
+                    <p><?php the_field('risposta_1')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_2') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_2')?></p>
+                    <p><?php the_field('risposta_2')?></p>
+                </div>
+            <?php endif; ?> 
+            
+            <?php if( get_field('domanda_3') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_3')?></p>
+                    <p><?php the_field('risposta_3')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_4') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_4')?></p>
+                    <p><?php the_field('risposta_4')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_5') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_5')?></p>
+                    <p><?php the_field('risposta_15')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_6') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_6')?></p>
+                    <p><?php the_field('risposta_6')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_7') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_7')?></p>
+                    <p><?php the_field('risposta_7')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_8') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_8')?></p>
+                    <p><?php the_field('risposta_8')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_9') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_9')?></p>
+                    <p><?php the_field('risposta_9')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_10') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_10')?></p>
+                    <p><?php the_field('risposta_10')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_11') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_11')?></p>
+                    <p><?php the_field('risposta_11')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_12') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_12')?></p>
+                    <p><?php the_field('risposta_12')?></p>
+                </div>
+            <?php endif; ?> 
+
+            <?php if( get_field('domanda_13') ): ?>
+                <div class="question">
+                    <p class="domanda"><?php the_field('domanda_13')?></p>
+                    <p><?php the_field('risposta_13')?></p>
+                </div>
+            <?php endif; ?> 
+        </div>
+
+    </div>
+   </div>
  
+   <?php
+		endwhile;
+		?>
  
  <?php get_footer();
 unset($detect); ?>

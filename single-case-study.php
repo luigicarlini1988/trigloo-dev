@@ -124,7 +124,7 @@
         </div>
 
         <div class="fifty">
-            <p class="titolo">Ulteriori Case History di successo</p>
+            <p class="titolo">Ulteriori Case Studies di successo</p>
         </div>
 
         <div class="flexy">
@@ -138,7 +138,7 @@
 
         <div class="fifty">
             <div class="small-cta">
-                <a class="butun" href="<?php echo site_url(); ?>/case-study/">Esplora tutti i case studies</a>
+                <a class="butun" href="<?php echo site_url(); ?>/case-studies/">Esplora tutti i case studies</a>
             </div>
         </div>
 
