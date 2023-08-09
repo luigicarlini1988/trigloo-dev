@@ -318,7 +318,7 @@ wp_reset_query();  ?>
         </div>
 
         <div class="fifty">
-            <p class="titolo">Alcuni Case History Selezionati</p>
+            <p class="titolo">Alcuni Case Studies Selezionati</p>
         </div>
 
         <div class="flexy">
@@ -332,7 +332,7 @@ wp_reset_query();  ?>
 
         <div class="fifty">
             <div class="small-cta">
-                <a class="butun" href="<?php echo site_url(); ?>/case-study/">Esplora tutti i case studies</a>
+                <a class="butun" href="<?php echo site_url(); ?>/case-studies/">Esplora tutti i case studies</a>
             </div>
         </div>
 

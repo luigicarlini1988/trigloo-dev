@@ -124,14 +124,18 @@
 
   #menu-reale .fifty {
     width:calc(100% - 160px);
-    margin-top:280px;
+    margin-top:120px;
     margin-left:120px;
   }
 
   #menu-reale .fifty.sec {
     width:calc(100% - 160px);
     margin-left:120px;
-    margin-top:180px;
+    margin-top:80px;
+  }
+
+  .interno-menu {
+    overflow:auto;
   }
 
   #menu-reale .link-skills p, #menu-reale .link-skills a, #menu-reale .link-skills a:after {
@@ -149,21 +153,21 @@
   }
 
   .link-skills {
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 40px 0px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .foot-info-l {
-    width: 50%;
-    margin-left: 60px;
-    margin-top: 40px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .foot-info-r {
     width: 100%;
-    margin-top: 100px;
-    margin-left: 100px
+    margin-top: 80px;
+    margin-left: 50px;
   }
 
   .foot-menus.flexy {
@@ -171,16 +175,16 @@
   }
 
   .fm-org {
-    padding-left: 60px;
+    padding-left: 50px;
     width: calc(50% - 30px);
     margin-top: 0px;
   }
 
   .fm-esplora {
     width: 100%;
-    margin-top: 120px;
+    margin-top: 80px;
     bottom: 100px;
-    margin-left: 60px;
+    margin-left: 0px;
   }
 
   .facciona {
@@ -522,10 +526,33 @@
 
   .centerello {
     width:calc(70% - 50px);
-    margin-left:50px;
+    margin-left:10px;
     padding-top:80px;
   }
 
+  #section-cliente {
+    margin-bottom:0;
+  }
+  #header-servizio-espolso .hl {
+    padding-top:50px;
+  }
+  .hl-int .titoletto, #header-servizio-espolso .titoletto {
+    margin-bottom:0;
+  }
+
+  .ps-thumb-text {
+    margin-left: 10px;
+    width: calc(100% - 10px);
+  }
+
+  #sezione-lavori-corr .ps-thumb-text .tito {
+    font-size: 38px;
+    line-height: 42px;
+}
+
+  #header-servizio-espolso .titolone {
+    margin: 0px auto 40px auto
+  }
   .page-template-page-aggr-servizi #header-servizi .hr,
   .page-template-page-aggr-servizi #header-servizi .hl {
     width:100%;
@@ -601,6 +628,17 @@
   .hl-int .titoletto {
     margin-left:0;
   }
+
+
+  .thumb-piccolo p.red {
+    margin-left: 0;
+  }
+
+  #menu-reale .fifty ul li a {
+    font-size:50px;
+    line-height:56px;
+  }
+
 
 }
 
@@ -1080,6 +1118,11 @@
   }
 
   .page-template-page-aggr-servizi .ss1 {
+    width:100%;
+  }
+
+  .last-origami img,
+  .new-flex img {
     width:100%;
   }
 

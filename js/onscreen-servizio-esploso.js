@@ -91,7 +91,17 @@ jQuery(window).scroll(function(){ // bind window scroll event
 		}
 	}
 
+  if (jQuery('#cases').length > 0) { // if target element exists in DOM
+    if (jQuery('#cases').is_on_screen()) { // if target element is visible on screen after DOM loaded
+       
+       $('.tp-im-cut').addClass('in');
+
+    }
+ }
+
 });
+
+
 
 
 jQuery(window).scroll(function(){ // resize before lavori correlati

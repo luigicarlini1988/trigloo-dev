@@ -1461,7 +1461,7 @@ span.outer-giga.in {
   width:100%;
   height:100%;
   overflow:hidden;
-  z-index:100;
+  z-index:1000;
   pointer-events: none;
 
 }
@@ -1664,6 +1664,19 @@ span.outer-giga.in {
 
 }
 
+#menu-reale .fifty ul li#sei a:before {
+  content:"06";
+  color: #f23d57;
+  font-size:16px;
+  font-weight:500;
+  position:absolute;
+  top:24px;
+  left:0;
+  opacity:0;
+  transition-duration: .3s;
+
+}
+
 #menu-reale .fifty ul li a:hover:before {
   opacity:1!important;
   left:0px;
@@ -1688,6 +1701,10 @@ span.outer-giga.in {
 #menu-reale .link-skills p, #menu-reale .link-skills a, #menu-reale .link-skills a:after {
   color: #555;
   transition-duration:.4s;
+}
+
+#menu-reale .link-skills p.claimW {
+  color:#fff;
 }
 
 #menu-reale .link-skills a:after {
@@ -2884,4 +2901,51 @@ a.mail:hover:before {
 #sk-foto3:hover img  {
   transform: rotateY(8Deg) scale(1.26) translateX(15px) ;
 
+}
+.header-generic .full {
+  padding:120px 0px 80px 0px;
+}
+
+.content-generic {
+  padding-bottom:100px;
+}
+
+ul.link-skills ul {
+  padding:0;
+}
+
+.new-flex {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.new-flex img {
+  width:calc(33% - 15px);
+}
+
+.titolino p {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 30px auto;
+}
+
+
+
+.content-generic.origami {
+  background-color: #1f1f1d;
+  padding:60px 0px;
+}
+
+.last-origami {
+  min-width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.last-origami img {
+  width:50%;
 }
