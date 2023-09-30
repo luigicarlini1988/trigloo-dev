@@ -23,9 +23,9 @@ $detect = new Mobile_Detect;
         <div id="logo-resp"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png" /></div>
         <div class="hl">
             <div class="hl-int">
-                <p class="titoletto red">Sviluppiamo insieme il Tuo Brand.</p><!-- We are Trigloo<span class="ori">®</span> -->
-                <p class="titolone">La tua Agenzia di Comunicazione integrata</p>
-                <p class="testo-intro">Imprenditori e PMI acquisiscono voce e visibilità. La tua storia e la tua passione sono centrali per noi. Se cerchi un partner creativo e dedicato, sei nel posto giusto. Scegli il servizio TRIGLOO® che vuoi sviluppare o combina le nostre competenze per un approccio integrato.</p>
+                <p class="titoletto red">We are Trigloo<span class="ori">®</span></p>
+                <p class="titolone">Siamo un'agenzia di comunicazione integrata</p>
+                <p class="testo-intro">TRIGLOÖ® segue ogni aspetto della comunicazione, dallo studio e progettazione alla creatività, dal marchio alla comunicazione, garantendo che ogni parte lavori insieme per raggiungere gli obiettivi voluti.</p>
                 <?php
                       if ( have_posts() ) {
                           while ( have_posts() ) {
@@ -63,21 +63,22 @@ $detect = new Mobile_Detect;
                     <h2 class="tito">Branding</h2>
                     <div id="sk-d1" style="width:100%; height:1px"></div>
                     <div class="onlyresp wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-brand.jpg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
                     </div>
                     <p class="testo">
                         <?php echo $_data['sales_point_setup_home']; ?>
                     </p>
-
+                    
                     <?php echo linkServiziHome(1); ?>
                     <div style="clear:both"></div>
                     <div class="small-cta">
-                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Scopri di più</a>
+                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Guarda tutti i
+                            lavori</a>
                     </div>
                 </div>
 
                 <div id="skeda2" class="in">
-                    <div class="divisorio onlyresp">
+                <div class="divisorio onlyresp">
                         <div class="iconcina red">
                             <p>02</p>
                         </div>
@@ -86,21 +87,22 @@ $detect = new Mobile_Detect;
                     <h2 class="tito">Web<br />Solution</h2>
                     <div id="sk-d2" style="width:100%; height:1px"></div>
                     <div class="onlyresp wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-websolution.jpg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
                     </div>
                     <p class="testo">
                         <?php echo $_data['online_communication_home']; ?>
                     </p>
-
+                    
                     <?php echo linkServiziHome(2); ?>
                     <div style="clear:both"></div>
                     <div class="small-cta">
-                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Scopri di più</a>
+                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Guarda tutti i
+                            lavori</a>
                     </div>
                 </div>
 
                 <div id="skeda3">
-                    <div class="divisorio onlyresp">
+                <div class="divisorio onlyresp">
                         <div class="iconcina red">
                             <p>03</p>
                         </div>
@@ -109,16 +111,17 @@ $detect = new Mobile_Detect;
                     <h2 class="tito">Offline<br />Comunication</h2>
                     <div id="sk-d3" style="width:100%; height:1px"></div>
                     <div class="onlyresp wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-offline.jpg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png">
                     </div>
                     <p class="testo">
                         <?php echo $_data['offline_communication_home']; ?>
                     </p>
-
+                    
                     <?php echo linkServiziHome(0); ?>
                     <div style="clear:both"></div>
                     <div class="small-cta">
-                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Scopri di più</a>
+                        <a class="butun" href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Guarda tutti i
+                            lavori</a>
                     </div>
                 </div>
 
@@ -131,27 +134,27 @@ $detect = new Mobile_Detect;
                     </div>
                 </div>
                 <!--<p id="giga" class="giga grey">What we do</p>-->
-
-                <div id="sk-foto1" class="in">
-                    <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-brand.jpg" />
-                    </a>
-                </div>
-
-
-                <div id="sk-foto2">
-                    <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-websolution.jpg" />
-                    </a>
-                </div>
-
-
-                <div id="sk-foto3">
-                    <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-offline.jpg" />
-                    </a>
-                </div>
-
+                
+                    <div id="sk-foto1" class="in">
+                        <a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/what-mobile.png" />
+                        </a>
+                    </div>
+                
+                
+                    <div id="sk-foto2">
+                        <a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                        </a>
+                    </div>
+                
+                
+                    <div id="sk-foto3">
+                        <a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lavoro.png" />
+                        </a>
+                    </div>
+               
             </div>
 
 
@@ -175,10 +178,7 @@ $detect = new Mobile_Detect;
         </div>
 
         <div class="leftore">
-            <p class="testone white">Affronti sfide nella comunicazione e nella coerenza del tuo brand? TRIGLOO® è al tuo fianco, offrendo soluzioni integrate e su misura, permettendoti di concentrarti sul tuo business principale.</p>
-            <div class="small-cta white">
-                <a class="butun" href=" <?php echo get_permalink(211); ?>">Iniziamo il tuo prossimo progetto</a>
-            </div>
+            <p class="testone white">La TRIGLOO® è un partner che gestisce ogni aspetto della comunicazione, dalla pianificazione, esecuzione e fino alla realizzazione, considerando e connettendo tutti i passaggi e unificando la responsabilità. Permettendo ai nostri Clienti di concentrarsi sul loro business principale.</p>
         </div>
     </div>
 </div>
@@ -193,26 +193,26 @@ $detect = new Mobile_Detect;
         </div>
 
         <div class="fifty">
-            <p class="titolo">I Nostri Successi, la Tua Ispirazione.</p>
+            <p class="titolo">Perchè affidarsi a Trigloo®</p>
         </div>
 
         <div class="flexy">
             <div class="fifty">
-                <p>Un assaggio del nostro impegno, del nostro punto di vista e del modo in cui lo facciamo, plasmato sulla visione dei nostri clienti. </p>
+                <p>L’attenzione che si deve mettere nei dettagli, e la risoluzione delle problematiche fanno della TRIGLOO ® un punto di partenza per molte operazioni di business.</p>
             </div>
             <div class="fifty">
-                <p>L’attenzione che si deve mettere nei dettagli e la risoluzione delle problematiche fanno di TRIGLOO ® un punto di partenza per molte operazioni di business.</p>
+                <p>I nostri Clienti ci hanno scelto in funzione di quello che facciamo e sul come lo sviluppiamo. </p>
             </div>
         </div>
 
         <div class="fifty">
             <div class="small-cta">
-                <a class="butun" href="<?php echo site_url(); ?>/portfolio/">Curiosa nel nostro Portfolio</a>
+                <a class="butun" href="<?php echo site_url(); ?>/portfolio/">esplora i nostri lavori singolarmente.</a>
             </div>
         </div>
 
     </div><!-- chiude centratore-->
-
+    
 </div><!-- chiude pre-portfolio-->
 
 <?php
@@ -318,21 +318,21 @@ wp_reset_query();  ?>
         </div>
 
         <div class="fifty">
-            <p class="titolo">Storie di Collaborazioni Vincenti</p>
+            <p class="titolo">Alcuni Case Studies Selezionati</p>
         </div>
 
         <div class="flexy">
             <div class="fifty">
-                <p>Da concept grafici artigianali e studiati alla strategia digitale: dietro ogni progetto, una storia unica. Ecco come abbiamo elevato i brand attraverso una comunicazione dedicata e integrata. </p>
+                <p>In TRIGLOO® abbiamo maturato esperienza in una vasta gamma di settori e creiamo soluzioni mirate che rispondono alle esigenze specifiche del mercato di riferimento e a seconda di quello che sia l’obbiettivo del Cliente<br /></p>
             </div>
             <div class="fifty">
-                <p>Lavoriamo a stretto contatto con i Clienti, condividendo idee e feedback in ogni fase per raggiungere obiettivi comuni e voluto.</p>
+                <p>Lavoriamo a stretto contatto con i Clienti, condividendo idee e feedback in ogni fase per raggiungere obiettivi comuni e il raggiungimento del posizionamento voluto.</p>
             </div>
         </div>
 
         <div class="fifty">
             <div class="small-cta">
-                <a class="butun" href="<?php echo site_url(); ?>/case-studies/">Scopri i Nostri Case Study</a>
+                <a class="butun" href="<?php echo site_url(); ?>/case-studies/">Esplora tutti i case studies</a>
             </div>
         </div>
 
@@ -340,30 +340,30 @@ wp_reset_query();  ?>
 
     <div class="cent-contenitore">
         <div id="cases" class="thumb-piccoli">
-
+            
 
             <?php foreach( $case_home as $post ): 
                 setup_postdata($post); ?>
 
-            <a href="<?php the_permalink(); ?>">
-                <div class="thumb-piccolo">
-                    <div class="tp-im-cut">
-                        <?php $medium_large = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium_large');?>
-                        <img class="news-thumb" src="<?php echo esc_url($medium_large['0']); ?>" loading="lazy" />
-                    </div>
-                    <p class="titolicchio"><?php the_title(); ?></p>
-                </div>
-            </a>
-
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="thumb-piccolo">
+                        <div class="tp-im-cut">
+                            <?php $medium_large = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium_large');?>
+                            <img class="news-thumb" src="<?php echo esc_url($medium_large['0']); ?>" loading="lazy" />
+                        </div>
+                        <p class="titolicchio"><?php the_title(); ?></p>
+                        </div>
+                    </a>
+              
             <?php endforeach; ?>
-
-
+            
+                  
             <?php wp_reset_postdata(); ?>
         </div>
     </div>
 
 </div><!-- chiude pre-portfolio-->
-<?php endif; ?>
+<?php endif; ?> 
 <?php get_template_part( 'includeLayout/cta-red' ); ?>
 
 

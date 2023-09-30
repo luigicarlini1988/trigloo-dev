@@ -1162,19 +1162,25 @@ span.outer-giga.in {
       margin-left:-25px;
     }
 
-    #cta-red .small-cta a, #cta-red .small-cta:after {
+    #cta-red .small-cta a, 
+    #cta-red .small-cta.white:after,
+    .small-cta.white a,
+    .small-cta.white:after {
       color:#fff;
     }
 
-    #cta-red .small-cta:before {
+    #cta-red .small-cta:before,
+    .small-cta.white:before {
       background-color:#fff;
     }
 
-    #cta-red .small-cta:hover a{
+    #cta-red .small-cta:hover a,
+    .small-cta.white:hover a{
       color: #202020;
     }
 
-    #cta-red .small-cta:hover:after {
+    #cta-red .small-cta:hover:after,
+    .small-cta.white:hover:after {
       color: #f23d57;
     }
 
@@ -2371,8 +2377,21 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
 }
 
 #video {
-  height:500px;
   margin:50px 0px 120px 0px;
+}
+
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .lavori-per-cliente {
@@ -2598,6 +2617,7 @@ a.mail:hover:before {
 
 #text-plus-form {
   background: linear-gradient(to left, #fff, #fff 125px, #f23d57 125px, #f23d57);
+  padding-top:26px;
 }
 
 #text-plus-form .fifty,
@@ -2630,7 +2650,11 @@ a.mail:hover:before {
 }
 
 #text-plus-form .flexy {
-  align-items: center;
+  align-items: flex-start;
+}
+
+#text-plus-form .frm_forms {
+  margin-top:100px;
 }
 
 #testo-mappa {
@@ -2969,4 +2993,34 @@ ul.link-skills ul {
 .seventy {
   margin-left: 30px;
   width: calc(100% - 80px);
+}
+
+
+.cent-contenitore .three-quarter li {
+  font-weight: 300;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+    
+}
+
+.cent-contenitore .three-quarter ul li {
+  list-style-type: none;
+}
+
+
+
+.cent-contenitore .three-quarter ul,
+.cent-contenitore .three-quarter ol {
+  margin:45px 0px;
+}
+
+
+#text-plus-form .titolone{
+  font-size: 46px;
+  line-height: 52px;
+}
+
+
+#text-plus-form .menu-info {
+  margin-top:40px;
 }

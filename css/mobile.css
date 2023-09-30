@@ -324,6 +324,11 @@
 
   }
 
+  #text-plus-form #logo-resp {
+    padding-top:0;
+    left:50px;
+  }
+
   #logo-resp img {
     width:100%;
   }
@@ -638,6 +643,29 @@
   #menu-reale .fifty ul li a {
     font-size:50px;
     line-height:56px;
+  }
+
+
+  #text-plus-form .flexy {
+    flex-wrap:wrap;
+  }
+
+  #text-plus-form .frm_forms {
+    margin-top:0px;
+  }
+  
+
+
+  #text-plus-form .fifty {
+    width: calc(100% - 50px);
+    margin-left: -40px;
+    margin-bottom:0px;
+    padding:50px 0px;
+  }
+  
+  #text-plus-form.in .fifty {
+    width:calc(100% - 50px);
+    margin-left: 0;
   }
 
 
@@ -1072,15 +1100,15 @@
 }
 
 #text-plus-form .fifty {
-  width:calc(70% - 50px);
-  margin-left: calc(30% - 140px);
+  width: calc(100% - 50px);
+  margin-left: -40px;
   margin-bottom:0px;
   padding:50px 0px;
 }
 
 #text-plus-form.in .fifty {
-  width:calc(70% - 50px);
-  margin-left: calc(30% - 100px);
+  width:calc(100% - 50px);
+  margin-left: 0;
 }
 
 
@@ -1686,6 +1714,11 @@
 
   #text-plus-form .fifty {
     width: calc(100% - 30px);
+    padding:60px 0px 60px 0px;
+
+  }
+
+  #text-plus-form .fifty.sec {
     padding:0px 0px 60px 0px;
 
   }
@@ -1693,6 +1726,12 @@
   #text-plus-form.in .fifty {
     width: calc(100% - 20px);
     margin-left: 0;
+  }
+
+  #text-plus-form .titolone {
+    font-size: 32px;
+    line-height: 38px;
+
   }
 
   .ancheno {
@@ -1793,6 +1832,11 @@
   .faq .seventy {
     width:100%;
     margin-left:0;
+  }
+
+  #text-plus-form #logo-resp {
+    padding-top:0;
+    left:26px;
   }
 }
 
