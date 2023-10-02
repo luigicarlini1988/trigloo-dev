@@ -240,7 +240,7 @@ span.outer-giga.in {
 
 #line-int {
   width:calc(100% - 250px);
-  max-width:1200px;
+  max-width:1400px;
   border-left:1px solid rgba(110,110,110,.1);
   border-right:1px solid rgba(110,110,110, .1);;
   position:relative;
@@ -523,7 +523,7 @@ span.outer-giga.in {
 
 .cent-contenitore {
   width:calc(100% - 250px);
-  max-width:1200px;
+  max-width:1400px;
   margin:0px auto;
 }
 
@@ -2337,6 +2337,7 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
 .immagine-extra img {
   height:auto;
   max-width:100%;
+  width:100%;
   opacity:0;
   transform:translateX(-50%);
   transition-duration:1.6s;
