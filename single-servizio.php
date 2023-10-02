@@ -33,7 +33,7 @@
 		          </div>
 		        </div>
 		        <span class="outer-giga">
-							<p class="giga white"><?php echo get_the_title(); ?></p>    
+							<p class="giga white">Servizio</p>    
 		        </span>
 		    </div><!-- chiuso header servizio esploso-->
 				<div id="section-servizio-esploso" class="b-grey">
