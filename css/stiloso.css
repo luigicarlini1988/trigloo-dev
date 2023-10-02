@@ -2380,13 +2380,17 @@ transform: rotateY(8Deg) scale(1.26) translateX(15px);
   margin:50px 0px 120px 0px;
 }
 
-.videowrapper {
+.videowrapper,
+.strimmalo {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
 
-.videowrapper iframe {
+
+
+.videowrapper iframe,
+.strimmalo iframe {
   position: absolute;
   top: 0;
   left: 0;

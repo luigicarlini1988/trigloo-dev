@@ -34,7 +34,7 @@
         </div>
     </div>
     <span class="outer-giga">
-        <p class="giga white cliente">CaseHistory</p>
+        <p class="giga white cliente">Portfolio</p>
     </span>
 </div><!-- chiuso header servizio esploso-->
 <div id="section-cliente">

@@ -347,7 +347,7 @@ $detect = new Mobile_Detect;
             <?php if( get_field('domanda_5') ): ?>
             <div class="question">
                 <p class="domanda"><?php the_field('domanda_5')?></p>
-                <p><?php the_field('risposta_15')?></p>
+                <p><?php the_field('risposta_5')?></p>
             </div>
             <?php endif; ?>
 
