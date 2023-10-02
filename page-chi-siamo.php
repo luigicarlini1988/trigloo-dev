@@ -25,7 +25,7 @@ $detect = new Mobile_Detect;
            <div class="hl">
              <div class="hl-int">
                <p class="titoletto red">Chi/Cosa/Come siamo</p>
-               <h1 class="titolone">Siamo un luogo dove crescere insieme</h1>
+               <h1 class="titolone">Un punto d'incontro tra passione, brand e visione.</h1>
              </div>
            </div>
 
@@ -62,12 +62,10 @@ $detect = new Mobile_Detect;
                 <div class="lineetta"></div>
             </div>
             <p class="titolinostatic">Benvenuto in Trigloo<span class="ori">®</span></p>
-            <p>TRIGLOÖ® ( s.m. [Trì-glù] ) è uno studio di comunicazione integrato, “coordiniamo” il tuo brand, in base ai tuoi obiettivi, e al tuo mercato di riferimento.<br/>
-Trigloo®, ci piaci tu! (I brand you!)<br/>
-Evoluzione: Individualità, cooperazione e collaborazione.
-</p>
+            <p>In TRIGLOÖ®, crediamo che ogni PMI italiana abbia una storia unica e una visione da comunicare. Noi siamo qui per dare voce a quella visione, per integrare passione e professionalità in una comunicazione che funziona. Per gli imprenditori che cercano un partner flessibile e dedicato, Trigloo è la scelta giusta.<br/>
+Evolviamo insieme, con individualità, cooperazione e collaborazione.</p>
             <div class="small-cta">
-              <a class="butun" href="#">Leggi il Manifesto</a>
+              <a class="butun" href="<?php echo get_permalink(211); ?>">Contattaci</a>
             </div>
           </div>
         </div>
@@ -93,14 +91,14 @@ Evoluzione: Individualità, cooperazione e collaborazione.
           </div>
           <div class="lineetta white"></div>
       </div>
-      <p class="titolino white">Cresciamo insieme?</p>
+      <p class="titolino white">Cresciamo insieme: Fiducia</p>
     </div>
 
     <div class="fifty go">
-      <p class="white">Siamo una realtà <strong>snella</strong>, questo ci consente di muoverci agevolmente nel mercato di riferimento.<br/><br/>
-Abbiamo scelto di collaborare con più professionisti, in ogni progetto c’è un’individualità che deve emergere, questo per garantire al cliente <strong>unicità nella propria resa</strong>, e per poter studiare meglio ed entrare in empatia con il soggetto.<br/><br/>
-Potremmo definirci un network, seguiamo il cliente in <strong>tutte le fasi</strong> dall’idea alla produzione della resa finale!<br/><br/>
-Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta vengono coinvolti.</p>
+      <p class="white">Ti senti sopraffatto dalla <strong>vastità del mondo digitale</strong>? Difficoltà a far emergere il tuo brand in un mercato così affollato? Stanco di sentire decine di professionisti e doverli coordinare?<br/><br/>
+Noi di Trigloo® lo capiamo. Siamo <strong>snelli e flessibili</strong>, permettendoci di navigare con te attraverso le sfide del mercato moderno. Ogni progetto ha una sua <strong>individualità</strong>, e il nostro approccio collaborativo garantisce che ogni cliente riceva una soluzione dedicata.<br/><br/>
+Non sei solo un altro cliente; sei un partner con una <strong>visione da condividere</strong>.<br/><br/>
+<a href="<?php echo get_permalink(211); ?>">Parliamone </a></p>
     </div>
 
   </div>
@@ -115,7 +113,7 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
             </div>
             <div class="lineetta"></div>
         </div>
-        <p class="tito">La fauna Triglooense</p>
+        <p class="tito">Una parte di noi</p>
     </div>
 
     <div class="thumb-piccoli">
@@ -127,7 +125,7 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
           <p class="nomi-trigloo">Andrea Franzino</p>
           <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
             Graphic Designer<br/>Crodino Enthusiast</p>
-            <a class="mail" href="mailto:#">andrea.franzino@trigloo.it</a>
+            <a class="mail" href="mailto:andrea.franzino@trigloo.it">andrea.franzino@trigloo.it</a>
         </div>
 
 
@@ -138,7 +136,7 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
           <p class="nomi-trigloo">Elisa Vanara</p>
           <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
             Graphic Designer<br/>Crodino Enthusiast</p>
-            <a class="mail" href="mailto:#">elisa.vanara@trigloo.it</a>
+            <a class="mail" href="mailto:elisa.vanara@trigloo.it">elisa.vanara@trigloo.it</a>
         </div>
 
         <div class="thumb-piccolo">
@@ -147,8 +145,8 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
           </div>
           <p class="nomi-trigloo">Pino Galvagno</p>
           <p class="red">Consulente SEO<br/>
-            Sviluppatore Php<br/>web marketing</p>
-            <a class="mail" href="mailto:#">seo@trigloo.it</a>
+            Sviluppatore<br/>Web Marketing</p>
+            <a class="mail" href="mailto:seo@trigloo.it">seo@trigloo.it</a>
         </div>
 
         <div class="thumb-piccolo">
@@ -158,7 +156,7 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
           <p class="nomi-trigloo">Luigi Carlini</p>
           <p class="red">WebDesigner<br/>
             WebDeveloper<br/>Crodino Enthusiast</p>
-            <a class="mail" href="mailto:#">webdev@trigloo.it</a>
+            <a class="mail" href="mailto:webdev@trigloo.it">webdev@trigloo.it</a>
         </div>
 
       </div>
@@ -169,9 +167,8 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
             <div class="tp-im-cut">
               <img src="<?php echo get_template_directory_uri(); ?>/img/andre.png" />
             </div>
-            <p class="nomi-trigloo">Andrea Franzino</p>
-            <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
-              Graphic Designer<br/>Crodino Enthusiast</p>
+            <p class="nomi-trigloo">Andrea Perini</p>
+            <p class="red">Advertiser<br/>Social Media Advertiser</p>
               <a class="mail" href="mailto:#">andrea.franzino@trigloo.it</a>
           </div>
 
@@ -180,7 +177,7 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
             <div class="tp-im-cut">
               <img src="<?php echo get_template_directory_uri(); ?>/img/eli.png" />
             </div>
-            <p class="nomi-trigloo">Elisa Vanara</p>
+            <p class="nomi-trigloo">Toni</p>
             <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
               Graphic Designer<br/>Crodino Enthusiast</p>
               <a class="mail" href="mailto:#">elisa.vanara@trigloo.it</a>
@@ -188,9 +185,9 @@ Tutto questo ci è permesso grazie a degli ottimi team che di volta in volta ven
 
           <div class="thumb-piccolo">
             <div class="tp-im-cut">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/me.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/staff-arale.jpg" />
             </div>
-            <p class="nomi-trigloo">Luigi Carlini</p>
+            <p class="nomi-trigloo">Arale</p>
             <p class="red">WebDesigner<br/>
               WebDeveloper<br/>Crodino Enthusiast</p>
               <a class="mail" href="mailto:#">webdev@trigloo.it</a>

@@ -11,19 +11,19 @@
 
 <?php if(is_page(211)){ ?> 
 <div id="fixed-UI-left">
-        <div id="logo" class="out"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png" alt="logo trigloo" /></div>
-        <div id="icoo" class="in"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo-w.png" alt="logo trigloo" /></div>
+        <div id="logo" class="out"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png" alt="logo trigloo" /></a></div>
+        <div id="icoo" class="in"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo-w.png" alt="logo trigloo" /></a></div>
 </div>
 <div id="fixed-UI-left-mob" class="in">
-  <div id="mob-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png" alt="logo trigloo" /></div>
-  <div id="mob-icoo"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo-w.png" alt="logo trigloo" /></div>
+  <div id="mob-logo"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png" alt="logo trigloo" /></a></div>
+  <div id="mob-icoo"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo-w.png" alt="logo trigloo" /></a></div>
 </div>
 <?php }else{ ?> 
 
 
 <div id="fixed-UI-left">
   <div id="logo"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png" alt="logo trigloo"/></a></div>
-  <div id="icoo"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo.png" alt="logo trigloo" /></div>
+  <div id="icoo"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo.png" alt="logo trigloo" /></a></div>
   <div id="center-sx">
     <div id="wwd">What we do</div>
     <div id="swk">Some Works</div>
@@ -32,7 +32,7 @@
 
 <div id="fixed-UI-left-mob">
   <div id="mob-logo"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png" alt="logo trigloo"/></a></div>
-  <div id="mob-icoo"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo.png" alt="logo trigloo" /></div>
+  <div id="mob-icoo"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo.png" alt="logo trigloo" /></a></div>
 </div>
 <?php } ?>
 

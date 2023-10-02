@@ -1,16 +1,16 @@
 <div id="menu-reale">
   <div id="sfondone-menu"></div>
   <div class="interno-menu">
-    <div class="icoo-w"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo-w.png"/></div>
-    <div class="trigloo-w-menu"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png"/></div>
+    <div class="icoo-w"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icoo-w.png"/></a></div>
+    <div class="trigloo-w-menu"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-w.png"/></a></div>
     <div class="cent-contenitore flexy">
       <div class="fifty">
         <ul>
           <li id="uno"><a href="<?php echo site_url(); ?>">Home</a></li>
           <li id="due"><a href="<?php echo get_permalink(209); ?>">About</a></li>
-          <li id="tre"><a href="<?php echo get_permalink(57); ?>">Skills</a></li>
+          <li id="tre"><a href="<?php echo get_permalink(13); ?>">Portfolio</a></li>
           <li id="quattro"><a href="<?php echo get_permalink(583); ?>">Case Studies</a></li>
-          <li id="cinque"><a href="<?php echo get_permalink(13); ?>">Portfolio</a></li>
+          <li id="cinque"><a href="<?php echo get_permalink(57); ?>">Servizi</a></li>
           <li id="sei"><a href="<?php echo get_permalink(211); ?>">Contatti</a></li>
         </ul>
       </div>

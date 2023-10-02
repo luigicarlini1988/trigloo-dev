@@ -72,7 +72,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   });
 
 
-
   $(document).ready(function () {
     $(".giga.white").paroller({ factor: 0.4, type: 'foreground', direction: 'horizontal', transition: 'transform 0.1s ease' });
     $(".ps-thumb .ps-thumb-img").paroller({ factor: 0.2, type: 'foreground', direction: 'vertical', transition: 'transform 0.1s ease' });

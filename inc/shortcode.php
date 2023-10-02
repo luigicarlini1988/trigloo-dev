@@ -257,7 +257,7 @@ function lavoriRelazione($_id){
             //$image = get_field('immagine_mobile_porfolio');
             //echo $_lID.'<br/>';
             if (has_post_thumbnail( $_lID ) ):
-              $image = wp_get_attachment_image_src( get_post_thumbnail_id( $_lID ), 'medium' );
+              $image = wp_get_attachment_image_src( get_post_thumbnail_id( $_lID ), 'large' );
               $_content .= '<a href="'.get_permalink().'">
                 <div class="thumb-piccolo">
                   <div class="tp-im-cut">

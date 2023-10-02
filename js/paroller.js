@@ -188,8 +188,6 @@
                 }
             });
 
-            
-
             $(window).on('scroll', function () {
                 var scrolling = $(this).scrollTop();
                 var scrollTop = $(document).scrollTop();
@@ -228,7 +226,3 @@
         });
     };
 });
-
-
-
-

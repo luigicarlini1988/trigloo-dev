@@ -21,6 +21,7 @@ $detect = new Mobile_Detect;
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?v=<?php echo $_ver; ?>">
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.10.2.min.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
+
     <?php /*
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js?v=<?php echo $_ver; ?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js?v=<?php echo $_ver; ?>"></script>
@@ -56,10 +57,12 @@ $detect = new Mobile_Detect;
     });
     </script>
     <?php endif; ?>
+
     <?php if(is_page(209)): //id pagina chi siamo ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-chi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-chi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <?php endif; ?>
+
     <?php if(is_page(211)): //id pagina contatti ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-contatti.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-contatti.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
@@ -78,6 +81,7 @@ $detect = new Mobile_Detect;
     });
     </script>
     <?php endif; ?>
+
     <?php if(is_page(57) || is_page(13)|| is_page(857)): //id aggr pagina servizi ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
@@ -96,7 +100,8 @@ $detect = new Mobile_Detect;
     });
     </script>
     <?php endif; ?>
-    <?php if(is_singular( 'servizio' ) || is_singular( 'case-study' ) ): //pag aggreg portfolio ?>
+
+    <?php if(is_singular( 'servizio' ) || is_singular( 'case-study' ) ): //pag single servizio s case study ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-servizi.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-servizio-esploso.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <script>
@@ -144,6 +149,8 @@ $detect = new Mobile_Detect;
         });
     });
     </script>
+
+
     <!-- new parallax instance for lavoro esploso -->
     <script>
     document.addEventListener("DOMContentLoaded", function(event) {
@@ -152,6 +159,11 @@ $detect = new Mobile_Detect;
     });
     </script>
     <?php endif; ?>
+
+
+
+
+
     <?php if(is_404()): ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-404.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/onscreen-404.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
@@ -266,5 +278,6 @@ $detect = new Mobile_Detect;
 </head>
 
 <body <?php body_class(); ?>>
+
     <?php get_template_part( 'inc/gtmBody' ); ?>
     <?php unset($detect); ?>

@@ -33,30 +33,27 @@ Template Name: Pagina Aggr Portfolio
 					</div>
 
 					<div class="hr">
-						<div class="filters-column">
-							<h3 class="testo-intro">Filtra per categoria:</h3>
+						<p class="testo-intro">Di seguito trovi una selezione dei nostri lavori migliori:</p>
 
-							<div>
-								<ul class="serv-correlati link-skills">
-									<?php if(isset($_GET['macroSez'])): ?>
-										<li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
-										<li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
-										<li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
-									<?php else: ?>
-										<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
-										<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
-										<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
-								<?php endif; ?>
-								</ul>
-							</div>
+						<div>
+							<ul class="serv-correlati link-skills">
+								<?php if(isset($_GET['macroSez'])): ?>
+									<li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
+									<li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
+									<li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
+								<?php else: ?>
+									<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
+									<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
+									<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
+							<?php endif; ?>
+							</ul>
 						</div>
 						
-						<div class="filters-column">
 						<?php 
 						$_microSezlabel = "";
 						
 						if(isset($_GET['macroSez'])){
-							$_microSezlabel = '<div class="titPort"><h3 class="testo-intro">Scegli un servizio specifico</h3>
+							$_microSezlabel = '<div class="titPort"><h3>Scegli un servizio specifico</h3>
 							</div>
 							<div>
 								<ul class="serv-correlati link-skills">';
@@ -177,8 +174,6 @@ Template Name: Pagina Aggr Portfolio
 										endwhile;
 							 endif; */
 							 ?>
-
-							</div><!--filters column-->
 						 
 						 
 						 
