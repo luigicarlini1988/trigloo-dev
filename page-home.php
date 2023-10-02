@@ -106,7 +106,7 @@ $detect = new Mobile_Detect;
                         </div>
                         <div class="lineetta b-red"></div>
                     </div>
-                    <h2 class="tito">Offline<br />Comunication</h2>
+                    <h2 class="tito">Offline<br />Communication</h2>
                     <div id="sk-d3" style="width:100%; height:1px"></div>
                     <div class="onlyresp wrap">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/servizi-home-slider-offline.jpg">
