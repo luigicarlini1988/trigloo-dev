@@ -444,7 +444,7 @@
   }
 
   #cont-fotoservizi {
-    height:480px;
+    height:auto;
   }
 
   #cont-fotoservizi.in {
@@ -843,7 +843,7 @@
   }
 
   #cont-fotoservizi {
-    height: 380px;
+    height: auto;
   }
 
   .ss-banda.flexy {
@@ -1490,7 +1490,7 @@
   }
 
   #cont-fotoservizi {
-    height:280px;
+    height:auto;
   }
 
   #cont-fotoservizi.in {

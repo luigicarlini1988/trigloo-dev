@@ -731,7 +731,6 @@ span.outer-giga.in {
   justify-content: center;
   left:0;
   transition-duration:.8s;
-
   perspective: 760px;
 }
 
@@ -741,6 +740,8 @@ span.outer-giga.in {
 #sk-foto1 img, #sk-foto2 img, #sk-foto3 img {
   height:100%;
   transition-duration:.8s;
+  object-fit: cover;
+  width: 100%;
 
 }
 
@@ -1818,7 +1819,7 @@ span.outer-giga.in {
   position: relative;
   display: flex;
   justify-content: center;
-  height:580px;
+  height:auto;
   transition-duration:1.2s;
   max-width: calc(50% + 600px);
 
@@ -1831,7 +1832,9 @@ span.outer-giga.in {
 
 
 #cont-fotoservizi img {
-  height:130%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .tria, .cir, .plu {
