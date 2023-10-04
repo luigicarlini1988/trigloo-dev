@@ -15,44 +15,44 @@ Template Name: Pagina Aggr Portfolio
  get_header();
  $detect = new Mobile_Detect;
   ?>
-  <?php get_template_part( 'includeLayout/postHead' ); ?>
-  <?php get_template_part( 'includeLayout/sidebar' ); ?>
-	<div id="header-servizi" class="portfolio-int">
-		<div class="cent-contenitore">
-				<div id="logo-resp"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png"/></div>
-				<div class="tria"><img src="<?php echo get_template_directory_uri(); ?>/img/tria.png"/></div>
-				<div class="cir"><img src="<?php echo get_template_directory_uri(); ?>/img/cir.png"/></div>
-				<div class="plu"><img src="<?php echo get_template_directory_uri(); ?>/img/plu.png"/></div>
+<?php get_template_part( 'includeLayout/postHead' ); ?>
+<?php get_template_part( 'includeLayout/sidebar' ); ?>
+<div id="header-servizi" class="portfolio-int">
+    <div class="cent-contenitore">
+        <div id="logo-resp"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-b.png" /></div>
+        <div class="tria"><img src="<?php echo get_template_directory_uri(); ?>/img/tria.png" /></div>
+        <div class="cir"><img src="<?php echo get_template_directory_uri(); ?>/img/cir.png" /></div>
+        <div class="plu"><img src="<?php echo get_template_directory_uri(); ?>/img/plu.png" /></div>
 
-				<div class="flexy">
-					<div class="hl">
-						<div class="hl-int">
-							<h1 class="titoletto red">Portfolio</h1>
-							<p class="titolone">Alcuni dei nostri lavori migliori</p>
-						</div>
-					</div>
+        <div class="flexy">
+            <div class="hl">
+                <div class="hl-int">
+                    <h1 class="titoletto red">Portfolio</h1>
+                    <p class="titolone">Alcuni dei nostri lavori migliori</p>
+                </div>
+            </div>
 
-					<div class="hr">
-						<div class="filters-column">
-							<h3 class="testo-intro">Filtra per categoria:</h3>
+            <div class="hr">
+                <div class="filters-column">
+                    <h3 class="testo-intro">Filtra per categoria:</h3>
 
-							<div>
-								<ul class="serv-correlati link-skills">
-									<?php if(isset($_GET['macroSez'])): ?>
-										<li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
-										<li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
-										<li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
-									<?php else: ?>
-										<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
-										<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
-										<li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
-								<?php endif; ?>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="filters-column">
-						<?php 
+                    <div>
+                        <ul class="serv-correlati link-skills">
+                            <?php if(isset($_GET['macroSez'])): ?>
+                            <li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
+                            <li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
+                            <li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
+                            <?php else: ?>
+                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Branding</a></li>
+                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Offline Communication</a></li>
+                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Web Solutions</a></li>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filters-column">
+                    <?php 
 						$_microSezlabel = "";
 						
 						if(isset($_GET['macroSez'])){
@@ -144,7 +144,7 @@ Template Name: Pagina Aggr Portfolio
 								wp_reset_postdata();
 						
 						 ?>
-						 <?php
+                    <?php
 						 /*$_c = 1;
 							 if( $the_query->have_posts() ):
 									 while( $the_query->have_posts() ) : $the_query->the_post();
@@ -178,27 +178,28 @@ Template Name: Pagina Aggr Portfolio
 							 endif; */
 							 ?>
 
-							</div><!--filters column-->
-						 
-						 
-						 
-						
-						
-						
-						
-						
-						
+                </div>
+                <!--filters column-->
 
-					</div>
-				</div>
-		</div>
-	</div>
-	<div id="sezione-lavori-corr" class="portfolio-int">
 
-	 <div class="cent-contenitore">
-		 	 
-		 
-		 <?php
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sezione-lavori-corr" class="portfolio-int">
+
+    <div class="cent-contenitore">
+
+
+        <?php
 		 $_c = 1;
 			 if( $the_query->have_posts() ):
 					 while( $the_query->have_posts() ) : $the_query->the_post();
@@ -232,13 +233,13 @@ Template Name: Pagina Aggr Portfolio
 			 endif; 
 			 ?>
 
-			 
 
-	 </div>
 
- </div>
-	
-				
-	  <?php get_template_part( 'includeLayout/cta-red' ); ?>
-		<?php get_footer();
+    </div>
+
+</div>
+
+
+<?php get_template_part( 'includeLayout/cta-red' ); ?>
+<?php get_footer();
 		unset($detect); ?>

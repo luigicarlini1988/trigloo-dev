@@ -63,7 +63,7 @@
                     <li><a href="<?php echo get_permalink(583); ?>">Case Studies</a></li>
                     <li><a href="<?php echo get_permalink(13); ?>">Portfolio</a></li>
                     <li><a href="<?php echo get_permalink(211); ?>">Contatti</a></li>
-                    <li><a href="<?php echo get_permalink(1261); ?>">Confronta i nostri Servizi</a></li>
+                    <li><a href="<?php echo get_permalink(1261); ?>">Quale servizio è giusto per me?</a></li>
             </div>
         </div>
         <div class="foot-menus flexy">
