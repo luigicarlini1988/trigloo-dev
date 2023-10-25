@@ -24,7 +24,7 @@ $detect = new Mobile_Detect;
         <div class="hl">
             <div class="hl-int">
                 <p class="titoletto red">Sviluppiamo insieme il Tuo Brand.</p><!-- We are Trigloo<span class="ori">®</span> -->
-                <p class="titolone">La tua Agenzia di Comunicazione integrata</p>
+                <p class="titolone">La tua guida nella Comunicazione Integrata</p>
                 <p class="testo-intro">Imprenditori e PMI acquisiscono voce e visibilità. La tua storia e la tua passione sono centrali per noi. Se cerchi un partner creativo e dedicato, sei nel posto giusto. Scegli il servizio TRIGLOO® che vuoi sviluppare o combina le nostre competenze per un approccio integrato.</p>
                 <?php
                       if ( have_posts() ) {

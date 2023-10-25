@@ -63,7 +63,7 @@ p {
 }
 
 .titoletto {
-  font-size:26px;
+  font-size:24px;
   font-weight:700;
 }
 
@@ -2873,7 +2873,7 @@ a.mail:hover:before {
 #frm_form_1_container.frm_forms textarea {
   border:none;
   border-radius:0;
-  padding:24px 12px;
+  padding:14px 12px;
   background:rgba(255,255,255,0.9);
   color:#202020;
   font-family: 'Montserrat';
@@ -3033,4 +3033,22 @@ ul.link-skills ul {
 
 #text-plus-form .menu-info {
   margin-top:40px;
+}
+
+#frm_form_1_container.frm_forms .frm_checkbox label {
+  display:inline-block;
+  color:#fff;
+}
+
+#frm_form_1_container.frm_forms input[type='checkbox'] {
+  padding:6px;
+}
+
+#frm_form_1_container.frm_forms .frm_checkbox label a {
+  color:#fff;
+  text-decoration:underline;
+}
+
+#frm_field_6_container {
+  margin:0;
 }

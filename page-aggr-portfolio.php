@@ -39,13 +39,15 @@ Template Name: Pagina Aggr Portfolio
                     <div>
                         <ul class="serv-correlati link-skills">
                             <?php if(isset($_GET['macroSez'])): ?>
-                            <li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline</a></li>
-                            <li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Sales Point Set-up</a></li>
-                            <li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Online</a></li>
+
+                            <li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Branding</a></li>
+                            <li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Web Solutions</a></li>
+                            <li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline Communication</a></li>
                             <?php else: ?>
-                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Branding</a></li>
-                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Offline Communication</a></li>
+
+                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Branding</a></li>
                             <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Web Solutions</a></li>
+                            <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline Communication</a></li>
                             <?php endif; ?>
                         </ul>
                     </div>
