@@ -37,10 +37,11 @@
 <?php } ?>
 
 <div id="fixed-UI-right">
-
+<?php if(!is_page(211)){ ?> 
   <div id="parliamo">
     <a href="<?php echo get_permalink(211); ?>" class="link">Parliamoci</a>
   </div>
+  <?php } ?>
   <div id="social">
       <a href="https://www.facebook.com/trigloo.adv/" target="_blank" rel="nofollow">
         <div class="soc-int">

@@ -35,7 +35,6 @@ $detect = new Mobile_Detect;
 
             <div class="menu-info">
                 <p class="loco white"><img src="<?php echo get_template_directory_uri(); ?>/img/loco.png" />Via Felice Cordero di Pamparato 6, Torino</p>
-                <p class="numero white"><img src="<?php echo get_template_directory_uri(); ?>/img/phone.png" />Ufficio +39 011 19504945 </p>
                 <p class="mail white"><img src="<?php echo get_template_directory_uri(); ?>/img/mail.png" />info@trigloo.it</p>
             </div>
 
@@ -47,7 +46,7 @@ $detect = new Mobile_Detect;
 
     </div>
 </div>
-
+<!--
 <div id="testo-mappa">
     <div class="cent-contenitore">
 
@@ -289,7 +288,7 @@ $detect = new Mobile_Detect;
                 position: myLatLng,
                 map: map,
                 title: 'Trigloo',
-                //icon: 'https://www.svgpngicons.com/jpg/location-pointer-eps.jpg'
+                icon: 'https://www.trigloo.it/dev/wp-content/uploads/2023/10/cropped-fava-32x32.png'
             });
 
             //Associate the styled map with the MapTypeId and set it to display.
@@ -301,7 +300,7 @@ $detect = new Mobile_Detect;
             async defer></script>
 
     </div>
-</div>
+</div>-->
 
 <div class="faq">
     <div class="cent-contenitore">

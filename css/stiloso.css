@@ -1427,6 +1427,8 @@ span.outer-giga.in {
 .fm-esplora ul {
   padding:0;
   margin-top:0px;
+  display: flex;
+  flex-wrap:wrap;
 }
 
 .fm-esplora ul li {
@@ -3051,4 +3053,8 @@ ul.link-skills ul {
 
 #frm_field_6_container {
   margin:0;
+}
+
+.link-skills a {
+  white-space: nowrap;
 }

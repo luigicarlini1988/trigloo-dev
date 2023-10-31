@@ -43,6 +43,7 @@ Template Name: Pagina Aggr Portfolio
                             <li <?php if($_GET['macroSez']==1): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Branding</a></li>
                             <li <?php if($_GET['macroSez']==2): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=2">Web Solutions</a></li>
                             <li <?php if($_GET['macroSez']==0): echo 'class="activePort"'; endif; ?>><a href="<?php echo site_url(); ?>/portfolio/?macroSez=0">Offline Communication</a></li>
+							<li><a href="<?php echo site_url(); ?>/portfolio/">Tutti i lavori</a></li>
                             <?php else: ?>
 
                             <li><a href="<?php echo site_url(); ?>/portfolio/?macroSez=1">Branding</a></li>
@@ -53,7 +54,7 @@ Template Name: Pagina Aggr Portfolio
                     </div>
                 </div>
 
-                <div class="filters-column">
+                <!-- <div class="filters-column">
                     <?php 
 						$_microSezlabel = "";
 						
@@ -96,8 +97,8 @@ Template Name: Pagina Aggr Portfolio
 									$args = array(
 									 'posts_per_page'	=> -1,
 									 'post_type' => 'portfolio',
-										'order' => 'ASC',
-									 'orderby' => 'title',
+										'order' => 'DESC',
+									 'orderby' => 'date',
 									 'post_status' => 'publish',
 									 'meta_query'	=> array(
 				 			       'relation'		=> 'AND',
@@ -112,8 +113,8 @@ Template Name: Pagina Aggr Portfolio
 										$args = array(
 										 'posts_per_page'	=> -1,
 										 'post_type' => 'portfolio',
-											'order' => 'ASC',
-										 'orderby' => 'title',
+										 'order' => 'DESC',
+										 'orderby' => 'date',
 										 'post_status' => 'publish',
 										 'meta_query'	=> array(
 											 'relation'		=> 'AND',
@@ -130,8 +131,8 @@ Template Name: Pagina Aggr Portfolio
 									$args = array(
 									 'posts_per_page'	=> -1,
 									 'post_type' => 'portfolio',
-										'order' => 'ASC',
-									 'orderby' => 'title',
+									 'order' => 'DESC',
+									 'orderby' => 'date',
 									 'post_status' => 'publish',
 										);
 								}
@@ -146,41 +147,9 @@ Template Name: Pagina Aggr Portfolio
 								wp_reset_postdata();
 						
 						 ?>
-                    <?php
-						 /*$_c = 1;
-							 if( $the_query->have_posts() ):
-									 while( $the_query->have_posts() ) : $the_query->the_post();
-									 
-									 if($_c==1):
-										 echo '<div class="portfolio-short-banda flexy">';
-									endif;
-											$_lID = get_the_ID();
-												$image = get_field('immagine_mobile_porfolio',$_lID);
-											echo '<div class="ps-thumb">
-											 <a href="'.get_permalink().'" title="'.get_the_title().'">
-												 <div class="ps-thumb-img done">
-													 <div class="persp">
-														 <img src="'.esc_url($image['url']).'" alt="'.esc_attr($image['alt']).'" />
-													 </div>
-												 </div>
-											 </a>
-												 <div class="ps-thumb-text">
-														 <p class="tito">'.get_the_title().'</p>
-												 </div>
-										 </div>';
-											//echo $the_query1->current_post;
-											if($_c===2 || $the_query->post_count == $the_query->current_post+1):
-												echo "</div>";
-												$_c = 1 ;
-											else:
-												$_c++;
-											endif;     
-														
-										endwhile;
-							 endif; */
-							 ?>
 
-                </div>
+
+                </div> -->
                 <!--filters column-->
 
 

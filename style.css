@@ -19,3 +19,8 @@ iframe{
  width: 62vw;
  height: calc(62vw/1.77);
 }
+
+
+.frm_style_stile-di-formidable.with_frm_style .frm_error {
+    color: #000!important;
+}

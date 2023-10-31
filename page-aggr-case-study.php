@@ -33,7 +33,11 @@ Template Name: Pagina Aggr Case Study
 					</div>
 
 					<div class="hr">
-						<p class="testo-intro">A seguire una selezione nostri interventi migliori:</p>
+						<p class="testo-intro"><?php $my_id = 583;
+$post_id = get_post($my_id);
+$content = $post_id->post_content;
+$content = apply_filters('the_content', $content);
+echo $content; ?></p>
 
             <?php
             $args = array(

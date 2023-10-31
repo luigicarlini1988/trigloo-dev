@@ -34,8 +34,8 @@
 
             <div class="foot-info-r">
                 <p class="loco"><img src="<?php echo get_template_directory_uri(); ?>/img/loco.png" />Via Felice Cordero di Pamparato 6, Torino</p>
-                <p class="numero"><img src="<?php echo get_template_directory_uri(); ?>/img/phone.png" />Ufficio +39 011 19504945 </p>
-                <p class="mail"><img src="<?php echo get_template_directory_uri(); ?>/img/mail.png" />info@trigloo.it</p>
+                
+                <p class="mail"><img src="<?php echo get_template_directory_uri(); ?>/img/mail.png" /><a href="mailto:info@trigloo.it">info@trigloo.it</a></p>
                 <br /><br />
                 <p class="nonono">Ci troviamo a Torino, in Piazza Bernini in un palazzo storico (Case Bocca e Comoglio) edificato nel 1929, nelle immediate vicinanze della Metro e in direzione tangenziale.
                     Possiamo offrirti un caffè? 🙂
@@ -48,9 +48,9 @@
             <div class="fm-org">
                 <ul>
                     <li><a href="<?php echo get_permalink(1155); ?>">Dati Societari</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">SiteMap</a></li>
+                    <li><a href="<?php echo get_permalink(1430); ?>">Cookie Policy</a></li>
+                    <li><a href="<?php echo get_permalink(3); ?>">Privacy Policy</a></li>
+                    <li><a href="<?php echo get_permalink(1433); ?>">Mappa del Sito</a></li>
                 </ul>
             </div>
 

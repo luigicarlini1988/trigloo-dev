@@ -34,6 +34,10 @@ $detect = new Mobile_Detect;
     <!-- new parallax -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/ukiyo-parallax.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>
 
+    <?php if(is_page(1460)): //id pagina grazie ?>
+        <meta http-equiv="Refresh" content="3; url='https://www.trigloo.it/'" />
+    <?php endif; ?>
+
 
     <?php if(is_front_page()): ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/animazioni-home.js?v=<?php echo $_ver; ?>" type="text/javascript"></script>

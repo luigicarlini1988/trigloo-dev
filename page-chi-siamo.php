@@ -123,9 +123,7 @@ Non sei solo un altro cliente; sei un partner con una <strong>visione da condivi
             <img src="<?php echo get_template_directory_uri(); ?>/img/andre.png" />
           </div>
           <p class="nomi-trigloo">Andrea Franzino</p>
-          <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
-            Graphic Designer<br/>Crodino Enthusiast</p>
-            <a class="mail" href="mailto:andrea.franzino@trigloo.it">andrea.franzino@trigloo.it</a>
+          <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder</p>
         </div>
 
 
@@ -134,29 +132,25 @@ Non sei solo un altro cliente; sei un partner con una <strong>visione da condivi
             <img src="<?php echo get_template_directory_uri(); ?>/img/eli.png" />
           </div>
           <p class="nomi-trigloo">Elisa Vanara</p>
-          <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
-            Graphic Designer<br/>Crodino Enthusiast</p>
-            <a class="mail" href="mailto:elisa.vanara@trigloo.it">elisa.vanara@trigloo.it</a>
+          <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder</p>
         </div>
 
         <div class="thumb-piccolo">
           <div class="tp-im-cut">
             <img src="<?php echo get_template_directory_uri(); ?>/img/pino.jpg" />
           </div>
-          <p class="nomi-trigloo">Pino Galvagno</p>
+          <p class="nomi-trigloo">Pino</p>
           <p class="red">Consulente SEO<br/>
             Sviluppatore<br/>Web Marketing</p>
-            <a class="mail" href="mailto:seo@trigloo.it">seo@trigloo.it</a>
         </div>
 
         <div class="thumb-piccolo">
           <div class="tp-im-cut">
             <img src="<?php echo get_template_directory_uri(); ?>/img/me.png" />
           </div>
-          <p class="nomi-trigloo">Luigi Carlini</p>
+          <p class="nomi-trigloo">Luigi</p>
           <p class="red">WebDesigner<br/>
             WebDeveloper<br/>Crodino Enthusiast</p>
-            <a class="mail" href="mailto:webdev@trigloo.it">webdev@trigloo.it</a>
         </div>
 
       </div>
@@ -165,22 +159,20 @@ Non sei solo un altro cliente; sei un partner con una <strong>visione da condivi
 
           <div class="thumb-piccolo">
             <div class="tp-im-cut">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/andre.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/staff-pic-perini.jpg" />
             </div>
-            <p class="nomi-trigloo">Andrea Perini</p>
+            <p class="nomi-trigloo">Andrea</p>
             <p class="red">Advertiser<br/>Social Media Advertiser</p>
-              <a class="mail" href="mailto:#">andrea.franzino@trigloo.it</a>
           </div>
 
 
           <div class="thumb-piccolo">
             <div class="tp-im-cut">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/eli.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/staff-pic-toni.jpg" />
             </div>
-            <p class="nomi-trigloo">Toni</p>
-            <p class="red">Trigloo<span style="font-size:7px">®</span>Cofounder<br/>
-              Graphic Designer<br/>Crodino Enthusiast</p>
-              <a class="mail" href="mailto:#">elisa.vanara@trigloo.it</a>
+            <p class="nomi-trigloo">Antonino</p>
+            <p class="red">Insegnista<br/>
+              Posatore</p>
           </div>
 
           <div class="thumb-piccolo">
@@ -188,9 +180,7 @@ Non sei solo un altro cliente; sei un partner con una <strong>visione da condivi
               <img src="<?php echo get_template_directory_uri(); ?>/img/staff-arale.jpg" />
             </div>
             <p class="nomi-trigloo">Arale</p>
-            <p class="red">WebDesigner<br/>
-              WebDeveloper<br/>Crodino Enthusiast</p>
-              <a class="mail" href="mailto:#">webdev@trigloo.it</a>
+            <p class="red">Mascotte</p>
           </div>
 
         </div>
